@@ -9,7 +9,7 @@ export const Section6 = () => {
       <div className="LinearBackground w-full flex py-28 text-center rounded-3xl">
         <div className="w-1/2 flex flex-col items-center ">
           <p className="text-center mb-8 text-textprimary">
-            Optimize your content today
+            Best selling course
           </p>
           <p className="text-textsecondary ">
             Growth-accelerating products for startups, ecommerce stores, and
@@ -23,9 +23,7 @@ export const Section6 = () => {
       <div className="LinearBackground w-full flex py-28 text-center rounded-3xl">
         <div className="w-1/2"></div>
         <div className="w-1/2 flex flex-col items-center ">
-          <p className="text-center mb-8 text-textprimary">
-            Optimize your content today
-          </p>
+          <p className="text-center mb-8 text-textprimary">Best selling test</p>
           <p className="text-textsecondary">
             Growth-accelerating products for startups, ecommerce stores, and
             more.
