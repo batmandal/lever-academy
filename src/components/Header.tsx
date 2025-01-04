@@ -2,7 +2,11 @@
 
 import { useEffect, useState } from "react";
 
-const headerTabs = ["Home", "About", "FAQ"];
+const headerTabs = [
+  { title: "Home", url: "#Section1" },
+  { title: "About" },
+  { title: "FAQ", url: "#Section7" },
+];
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
@@ -26,9 +30,12 @@ export const Header = () => {
       <div className="flex gap-5 ">
         {headerTabs.map((item, index) => {
           return (
-            <p key={index} className="text-[#41404B] text-[18px]">
-              {item}
-            </p>
+            <a href={item.url} key={index}>
+              {item.title}
+            </a>
+            // <p key={index} className="text-[#41404B] text-[18px]">
+            //   {item.title}
+            // </p>
           );
         })}
       </div>

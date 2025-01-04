@@ -5,7 +5,10 @@ import { useTranslations } from "next-intl";
 export const Section1 = () => {
   const t = useTranslations("Homepage");
   return (
-    <div className="Section1 LinearBackground  flex flex-col text-center pt-52 items-center w-full  ">
+    <div
+      id="Section1"
+      className="Section1 LinearBackground  flex flex-col text-center pt-52 items-center w-full  "
+    >
       <h1 className="text-[80px]  w-[1000px] text-textprimary]">
         {/* Elevate Your Writing with AI-Powered Tools */}
         {t("title")}

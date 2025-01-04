@@ -12,7 +12,7 @@ export const Section5 = () => {
       <p className="text-[48px] mb-2 text-textprimary">
         What Others Are Saying
       </p>
-      <p className="text-[21px] text-textsecondary mb-16">
+      <p className="text-[22px] text-textsecondary mb-16">
         Growth-accelerating products for startups, ecommerce stores, and more.
       </p>
 

@@ -1,4 +1,4 @@
-"use clent";
+"use client";
 
 import { Footer } from "@/components";
 import {
@@ -8,6 +8,7 @@ import {
   Section4,
   Section5,
   Section6,
+  Section7,
 } from "./sections";
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
         <Section4 />
         <Section5 />
         <Section6 />
+        <Section7 />
         <Footer />
       </div>
     </div>

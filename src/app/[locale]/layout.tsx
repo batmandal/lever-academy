@@ -38,7 +38,7 @@ export default async function RootLayout({
 
   const messages = await getMessages();
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
       // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
