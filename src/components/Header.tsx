@@ -8,23 +8,50 @@ const headerTabs = [
   { title: "FAQ", url: "#Section7" },
 ];
 export const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  // const [isScrolled, setIsScrolled] = useState(false);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 50) {
+  //       setIsScrolled(true);
+  //     } else {
+  //       setIsScrolled(false);
+  //     }
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // });
+  const [showHeader, setShowHeader] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  console.log(lastScrollY);
+
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        setShowHeader(false);
       } else {
-        setIsScrolled(false);
+        setShowHeader(true);
       }
+      setLastScrollY(currentScrollY);
     };
+
     window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
     <div
-      className={`w-full flex items-center justify-between h-24 bg-transparent z-10
-     px-32 fixed ${isScrolled ? "bg-white shadow-md" : "bg-transparent"}`}
+      className={`header w-full flex items-center justify-between h-24 z-10
+     px-32 fixed transition-transform duration-500 ${
+       showHeader ? "translate-y-0 " : "-translate-y-full "
+     } ${lastScrollY === 0 ? "bg-transparent" : "bg-white shadow-md"}
+     `}
     >
       <img src="logo.png" alt="png" className="h-7" />
       <div className="flex gap-5 ">
