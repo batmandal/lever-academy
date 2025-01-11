@@ -1,1 +1,37 @@
-{ "Homepage": { "title": "Welcome to my website" } }
+{
+  "Homepage": { "title": "hello world" },
+  "Section1": {
+    "maintext": "Personalized Learning Through AI-Generated Tests",
+    "helpertext": "Revolutionize education with adaptive, AI-powered assessments tailored to each student’s needs. Smart Testing for Smarter Learning"
+  },
+
+  "Section2": { "maintext": "", "helpertext": "" },
+
+  "Section3": {
+    "maintext": "Get Started Freee Experience the transformative capabilities of - crafting content with Wordcraft AI",
+    "helpertext": ""
+  },
+
+  "Section4": {
+    "maintext": "Flexible Pricing Options",
+    "helpertext": "Join our pro features for unlimited without any contract and cancel anytime."
+  },
+
+  "Section5": {
+    "maintext": "What Others Are Saying",
+    "helpertext": "Growth-accelerating products for startups, ecommerce stores, and more."
+  },
+
+  "Section6": { "maintext": "", "helpertext": "" },
+
+  "Section7": {
+    "maintext": "Frequently asked questions?",
+    "helpertext": "Growth-accelerating products for startups, ecommerce stores, and more."
+  },
+
+  "Button": {
+    "mainButtontext": "Get Started Free",
+    "login": "Log In",
+    "signup": "Sign Up"
+  }
+}

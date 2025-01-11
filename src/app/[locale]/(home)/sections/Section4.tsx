@@ -1,16 +1,13 @@
 import { PriceCard } from "@/components/PriceCard";
+import { useTranslations } from "next-intl";
 
 export const Section4 = () => {
+  const t = useTranslations("Section4");
   return (
     <div>
       <div className="mb-16">
-        <p className="text-textprimary text-[56px] mb-2">
-          Flexible Pricing Options
-        </p>
-        <p className="text-textsecondary text-[22px]">
-          Join our pro features for unlimited without any contract and cancel
-          anytime.
-        </p>
+        <h2 className="text-textprimary text-[56px] mb-2">{t("maintext")}</h2>
+        <p className="text-textsecondary text-[22px]">{t("helpertext")}</p>
       </div>
       <div className="flex gap-9">
         <PriceCard bgcolor="#f4f7ff" />

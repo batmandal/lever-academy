@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 
 const headerTabs = [
   { title: "Home", url: "#Section1" },
-  { title: "About" },
   { title: "FAQ", url: "#Section7" },
+  { title: "Pages" },
 ];
 export const Header = () => {
   // const [isScrolled, setIsScrolled] = useState(false);

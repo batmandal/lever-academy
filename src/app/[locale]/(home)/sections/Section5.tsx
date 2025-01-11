@@ -5,20 +5,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay } from "swiper/modules";
+import { useTranslations } from "next-intl";
 
 export const Section5 = () => {
+  const t = useTranslations("Section5");
   return (
     <div className="w-full flex flex-col items-center">
-      <p className="text-[48px] mb-2 text-textprimary">
-        What Others Are Saying
-      </p>
-      <p className="text-[22px] text-textsecondary mb-16">
-        Growth-accelerating products for startups, ecommerce stores, and more.
-      </p>
+      <h2 className="text-[48px] mb-2 text-textprimary">{t("maintext")}</h2>
+      <p className="text-[22px] text-textsecondary mb-16">{t("helpertext")}</p>
 
       <div className="w-full overflow-hidden">
         <Swiper
-          slidesPerView={3}
+          slidesPerView={2}
           spaceBetween={36}
           className="swiper  "
           autoplay={{ delay: 2500, disableOnInteraction: false }}

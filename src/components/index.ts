@@ -4,3 +4,4 @@ export * from "./Footer";
 export * from "./CommentCard";
 export * from "./PriceCard";
 export * from "./SpecialButton";
+export * from "./FrequentlyQuestionPart";

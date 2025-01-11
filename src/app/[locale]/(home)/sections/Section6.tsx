@@ -5,7 +5,7 @@ import { Button } from "@/components";
 export const Section6 = () => {
   return (
     <div className="flex flex-col gap-10">
-      <p>SHILDEG BUTEEGDEHUUNUUD</p>
+      <h2>SHILDEG BUTEEGDEHUUNUUD</h2>
       <div className="LinearBackground w-full flex py-28 text-center rounded-3xl">
         <div className="w-1/2 flex flex-col items-center ">
           <p className="text-center mb-8 text-textprimary">
