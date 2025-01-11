@@ -10,9 +10,14 @@ export const Section7 = () => {
     setIsActive((prev) => !prev);
   };
   return (
-    <div className="w-full flex flex-col items-center" id="Section7">
+    <div
+      className="w-full flex flex-col justify-center h-screen items-center"
+      id="Section7"
+    >
       <div className="text-center mb-16">
-        <h2 className="text-textprimary text-[56px]">{t("maintext")}</h2>
+        <h2 className="text-textprimary text-[56px] font-bold">
+          {t("maintext")}
+        </h2>
         <p className="text-textsecondary text-[22px]">{t("helpertext")}</p>
       </div>
       <div className="w-[70%]">

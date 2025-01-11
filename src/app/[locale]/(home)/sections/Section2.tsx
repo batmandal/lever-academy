@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 
 const categories = [
@@ -9,39 +10,36 @@ const categories = [
   "Web Development",
   "Communication",
   "Business Analytics & Intelligence",
+  "...",
 ];
 
 export const Section2 = () => {
-  const [isActive, setIsActive] = useState("Data Science");
+  const t = useTranslations("Section2");
+  const [isActive, setIsActive] = useState(categories[0]);
   return (
-    <div className="w-full mt-28">
+    <div className="w-full mt-28 flex flex-col gap-10">
       <div>
-        <p className="text-textprimary text-[48px]">
-          All the skills you need in one place
+        <p className="text-textprimary text-[48px] font-bold">
+          {t("maintext")}
         </p>
-        <p className="text-textsecondary text-[22px]">
-          From critical skills to technical topics, Udemy supports your
-          professional development.
-        </p>
+        <p className="text-textsecondary text-[22px]">{t("helpertext")}</p>
       </div>
       <div>
-        <div className="w-full flex ">
+        <div className="w-full flex gap-2">
           {categories.map((category, index) => {
             return (
               <div
                 key={index}
-                onClick={() => setIsActive(category)}
-                className={`pt-4 pr-6 pb-4 border-b-2 border-solid cursor-pointer ${
-                  category === isActive ? "border-button" : "border-[#6a6f73]"
+                onClick={() => {
+                  setIsActive(category);
+                }}
+                className={`py-4 px-6 rounded-full cursor-pointer ${
+                  category === isActive
+                    ? "bg-button text-white"
+                    : "bg-[#F9F9F9]"
                 }`}
               >
-                <p
-                  className={` text-[22px] ${
-                    category === isActive ? "text-button" : "text-textprimary"
-                  }`}
-                >
-                  {category}
-                </p>
+                {category}
               </div>
             );
           })}

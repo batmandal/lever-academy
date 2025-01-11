@@ -11,7 +11,9 @@ export const Section5 = () => {
   const t = useTranslations("Section5");
   return (
     <div className="w-full flex flex-col items-center">
-      <h2 className="text-[48px] mb-2 text-textprimary">{t("maintext")}</h2>
+      <h2 className="text-[48px] mb-2 text-textprimary font-bold">
+        {t("maintext")}
+      </h2>
       <p className="text-[22px] text-textsecondary mb-16">{t("helpertext")}</p>
 
       <div className="w-full overflow-hidden">

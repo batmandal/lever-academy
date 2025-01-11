@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 const headerTabs = [
-  { title: "Home", url: "#Section1" },
+  { title: "Home", url: "" },
   { title: "FAQ", url: "#Section7" },
   { title: "Pages" },
 ];

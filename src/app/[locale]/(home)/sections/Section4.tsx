@@ -6,7 +6,9 @@ export const Section4 = () => {
   return (
     <div>
       <div className="mb-16">
-        <h2 className="text-textprimary text-[56px] mb-2">{t("maintext")}</h2>
+        <h2 className="text-textprimary text-[56px] font-bold mb-2">
+          {t("maintext")}
+        </h2>
         <p className="text-textsecondary text-[22px]">{t("helpertext")}</p>
       </div>
       <div className="flex gap-9">

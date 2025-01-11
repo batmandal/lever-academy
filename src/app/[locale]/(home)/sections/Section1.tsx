@@ -10,7 +10,7 @@ export const Section1 = () => {
       id="Section1"
       className="Section1 LinearBackground  flex flex-col text-center pt-52 items-center w-full  "
     >
-      <h1 className="text-[80px] w-[1000px] text-textprimary">
+      <h1 className="text-[80px] w-[1000px] text-textprimary font-bold">
         {t("maintext")}
       </h1>
       <p className=" w-[744px]  text-[24px]  text-textsecondary">
