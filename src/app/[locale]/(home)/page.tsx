@@ -1,6 +1,5 @@
 "use client";
 
-import { Footer } from "@/components";
 import {
   Section1,
   Section2,
@@ -22,7 +21,6 @@ const Home = () => {
         <Section5 />
         <Section6 />
         <Section7 />
-        <Footer />
       </div>
     </div>
   );

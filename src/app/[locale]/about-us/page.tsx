@@ -1,6 +1,6 @@
 "use client";
-const About = () => {
+const AboutUs = () => {
   return <div className="h-[300vh]">hi lalra</div>;
 };
 
-export default About;
+export default AboutUs;
