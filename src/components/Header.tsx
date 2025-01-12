@@ -3,28 +3,13 @@
 import { useEffect, useState } from "react";
 
 const headerTabs = [
-  { title: "Home", url: "" },
+  { title: "Home", url: "/" },
   { title: "FAQ", url: "#Section7" },
   { title: "Pages" },
 ];
 export const Header = () => {
-  // const [isScrolled, setIsScrolled] = useState(false);
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (window.scrollY > 50) {
-  //       setIsScrolled(true);
-  //     } else {
-  //       setIsScrolled(false);
-  //     }
-  //   };
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // });
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-
-  console.log(lastScrollY);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -60,9 +45,6 @@ export const Header = () => {
             <a href={item.url} key={index}>
               {item.title}
             </a>
-            // <p key={index} className="text-[#41404B] text-[18px]">
-            //   {item.title}
-            // </p>
           );
         })}
       </div>

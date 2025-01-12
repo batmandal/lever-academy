@@ -1,17 +1,17 @@
 "use client";
 import { Facebook, Instagram } from "@/assets/svg";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 
 const footerContents = [
-  "Home",
-  "Contact Us",
-  "404 Page",
-  "Features",
-  "Sign In",
-  "Terms Condition",
-  "About Us",
-  "Sing Up",
-  "Privacy Policy",
+  { text: "Home", link: "/" },
+  { text: "Contact Us", link: "/contact-us" },
+  { text: "404 Page", link: "" },
+  { text: "Features", link: "features" },
+  { text: "Sign In", link: "" },
+  { text: "Terms Condition", link: "/terms-condition" },
+  { text: "About Us", link: "about-us" },
+  { text: "Sign Up", link: "" },
+  { text: "Privacy Policy", link: "/privacy-policy" },
 ];
 
 export const Footer = () => {
@@ -26,14 +26,14 @@ export const Footer = () => {
           </p>
         </div>
         <div className=" grid grid-cols-3">
-          {footerContents.map((text, index) => {
+          {footerContents.map((item, index) => {
             return (
               <Link
-                href=""
+                href={item.link}
                 className="text-xl px-2 py-1  text-textsecondary"
                 key={index}
               >
-                {text}
+                {item.text}
               </Link>
             );
           })}

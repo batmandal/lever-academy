@@ -1,14 +1,15 @@
+import { FrequentlyQuestions } from "@/data";
 import { KeyboardArrowDownOutlined } from "@mui/icons-material";
 
 type FrequentlyQuestionPartType = {
   questionNo: string;
   question: string;
   onClick: () => void;
-  answer: string;
-  active?: boolean;
+  isActive: boolean;
 };
 export const FrequentlyQuestionPart = (props: FrequentlyQuestionPartType) => {
-  const { questionNo, question, onClick, answer, active } = props;
+  const { questionNo, question, onClick, isActive } = props;
+
   return (
     <div className="mb-10  ">
       <div className="flex justify-between items-center mb-3">
@@ -23,9 +24,12 @@ export const FrequentlyQuestionPart = (props: FrequentlyQuestionPartType) => {
           <KeyboardArrowDownOutlined fontSize="large" />
         </span>
       </div>
-      <p className={`text-textsecondary ${!active ? "hidden" : "flex"}`}>
-        {answer}
-      </p>
+      {isActive && (
+        <div className="pl-10 text-gray-600 text-base">
+          {FrequentlyQuestions.find((item) => item.questionNo === questionNo)
+            ?.answer || ""}
+        </div>
+      )}
     </div>
   );
 };

@@ -5,10 +5,8 @@ import { useState } from "react";
 
 export const Section7 = () => {
   const t = useTranslations("Section7");
-  const [isActive, setIsActive] = useState<boolean>(false);
-  const handleClick = () => {
-    setIsActive((prev) => !prev);
-  };
+  const [isQuestionIndex, setIsQuestionIndex] = useState<number | null>(null);
+
   return (
     <div
       className="w-full flex flex-col justify-center h-screen items-center"
@@ -24,12 +22,13 @@ export const Section7 = () => {
         {FrequentlyQuestions.map((items, index) => {
           return (
             <FrequentlyQuestionPart
-              onClick={handleClick}
+              onClick={() =>
+                setIsQuestionIndex(isQuestionIndex === index ? null : index)
+              }
               key={index}
               questionNo={items.questionNo}
               question={items.question}
-              answer={items.answer}
-              active={isActive}
+              isActive={isQuestionIndex === index}
             />
           );
         })}
