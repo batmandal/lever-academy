@@ -22,7 +22,7 @@ export const PriceCard = (props: PriceCardType) => {
           <p className="text-[52px] text-textprimary">Free</p>
           <p className="text-[18px] text-textsecondary pb-3">/month</p>
         </div>
-        <Button onClick={() => {}} label="Get Started Free" />
+        <Button href="/" label="Get Started Free" />
       </div>
       <div>
         <p className="text-[18px]">100 Credit (100 words)</p>

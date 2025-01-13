@@ -1,5 +1,7 @@
+"use client";
 import { FrequentlyQuestions } from "@/data";
 import { KeyboardArrowDownOutlined } from "@mui/icons-material";
+import { useState } from "react";
 
 type FrequentlyQuestionPartType = {
   questionNo: string;
@@ -9,6 +11,19 @@ type FrequentlyQuestionPartType = {
 };
 export const FrequentlyQuestionPart = (props: FrequentlyQuestionPartType) => {
   const { questionNo, question, onClick, isActive } = props;
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {
+    setIsClicked(true);
+
+    setTimeout(() => {
+      setIsClicked(false);
+    }, 100);
+
+    if (onClick) {
+      onClick();
+    }
+  };
 
   return (
     <div className="mb-10  ">
@@ -18,10 +33,16 @@ export const FrequentlyQuestionPart = (props: FrequentlyQuestionPartType) => {
           <p className="text-xl font-bold">{question}</p>
         </div>
         <span
-          onClick={onClick}
-          className="w-10 h-10 rounded-full border flex items-center justify-center border-textsecondary"
+          onClick={handleClick}
+          className="w-10 h-10 cursor-pointer rounded-full border bg-[#bcbcbc] border-textsecondary"
         >
-          <KeyboardArrowDownOutlined fontSize="large" />
+          <span
+            className={`w-10 h-10 rounded-full bg-[#dddddd] border flex items-center justify-center border-textsecondary ${
+              isClicked ? "translate-y-[-3px]" : "translate-y-[-5px]"
+            }`}
+          >
+            <KeyboardArrowDownOutlined fontSize="large" />
+          </span>
         </span>
       </div>
       {isActive && (

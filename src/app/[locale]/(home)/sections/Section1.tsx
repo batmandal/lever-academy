@@ -37,7 +37,7 @@ export const Section1 = () => {
         {t("helpertext")}
       </p>
       <div className="animation mb-20 mt-14">
-        <Button onClick={() => {}} label={bt("mainButtontext")} />
+        <Button href="/" label={bt("mainButtontext")} />
       </div>
 
       <div></div>

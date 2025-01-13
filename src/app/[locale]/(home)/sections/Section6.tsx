@@ -16,7 +16,7 @@ export const Section6 = () => {
             more.
           </p>
           <div className="w-fit mt-14">
-            <Button onClick={() => {}} label="Get Start Free" />
+            <Button href="/" label="Get Start Free" />
           </div>
         </div>
       </div>
@@ -29,7 +29,7 @@ export const Section6 = () => {
             more.
           </p>
           <div className="w-fit mt-14">
-            <Button onClick={() => {}} label="Get Start Free" />
+            <Button href="/" label="Get Start Free" />
           </div>
         </div>
       </div>

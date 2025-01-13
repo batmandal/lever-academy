@@ -10,6 +10,20 @@ const headerTabs = [
 export const Header = () => {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [isClicked, setIsClicked] = useState(false);
+  const [isClickeds, setIsClickeds] = useState(false);
+  const handleClick = () => {
+    setIsClicked(true);
+    setTimeout(() => {
+      setIsClicked(false);
+    }, 100);
+  };
+  const handleClick1 = () => {
+    setIsClickeds(true);
+    setTimeout(() => {
+      setIsClickeds(false);
+    }, 100);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,10 +62,33 @@ export const Header = () => {
           );
         })}
       </div>
-      <div className="py-4 px-6 w-fit h-fit text-white flex bg-button rounded-full gap-2">
+      {/* <div className="py-4 px-6 w-fit h-fit text-white flex bg-button rounded-full gap-2">
         <div className="w-16 cursor-pointer   flex justify-center">Log In</div>
         <span className="w-px bg-white "></span>
         <div className="w-16 cursor-pointer flex justify-center">Sign Up</div>
+      </div> */}
+      <div className="flex">
+        <div className="rounded-l-full bg-[#3f188c] ">
+          <div
+            onClick={handleClick}
+            className={`bg-button rounded-l-full px-6 py-4 text-white ${
+              isClicked ? "translate-y-[-3px]" : "translate-y-[-6px]"
+            }`}
+          >
+            sign in{" "}
+          </div>
+        </div>
+        <span className="w-px h-[50%] bg-white"></span>
+        <div className="rounded-r-full bg-[#3f188c] ">
+          <div
+            onClick={handleClick1}
+            className={`bg-button rounded-r-full px-6 py-4 text-white ${
+              isClickeds ? "translate-y-[-3px]" : "translate-y-[-6px]"
+            }`}
+          >
+            sign up{" "}
+          </div>
+        </div>
       </div>
     </div>
   );
