@@ -1,4 +1,4 @@
-import { PriceCard } from "@/components/PriceCard";
+import { PriceCard } from "@/app/[locale]/(home)/components/PriceCard";
 import { useTranslations } from "next-intl";
 
 export const Section4 = () => {

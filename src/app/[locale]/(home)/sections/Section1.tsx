@@ -7,19 +7,17 @@ import gsap from "gsap";
 
 export const Section1 = () => {
   useEffect(() => {
-    // ScrollTrigger-г GSAP-д бүртгэх
     gsap.registerPlugin(ScrollTrigger);
 
-    // Хөдөлгөөн үүсгэх
     gsap.from(".animation", {
-      y: 50, // Доороос гарч ирэх
-      opacity: 0, // Эхлэх үед харагдахгүй
-      duration: 1, // Хугацаа (секундээр)
-      stagger: 0.3, // Дараалалтай хөдөлгөөн (0.3 секундийн хоцролт)
+      y: 50,
+      opacity: 0,
+      duration: 1,
+      stagger: 0.3,
       scrollTrigger: {
-        trigger: ".animation", // Хөдөлгөөнийг идэвхжүүлэх элемент
-        start: "top 80%", // Хөдөлгөөн эхлэх цэг
-        toggleActions: "play none none none", // Үйлдлүүд
+        trigger: ".animation",
+        start: "top 80%",
+        toggleActions: "play none none none",
       },
     });
   }, []);

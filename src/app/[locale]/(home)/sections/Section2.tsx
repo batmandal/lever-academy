@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { CourseCard } from "../components";
 
 const categories = [
   "Data Science",
@@ -44,6 +45,10 @@ export const Section2 = () => {
             );
           })}
         </div>
+      </div>
+      <div className="flex gap-4">
+        <CourseCard />
+        <CourseCard />
       </div>
     </div>
   );

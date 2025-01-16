@@ -1,11 +1,11 @@
 "use client";
 
-import { CommentCard } from "@/components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay } from "swiper/modules";
 import { useTranslations } from "next-intl";
+import { CommentCard } from "../components";
 
 export const Section5 = () => {
   const t = useTranslations("Section5");

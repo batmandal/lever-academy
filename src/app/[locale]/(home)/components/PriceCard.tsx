@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from ".";
+import { Button } from "../../../../components";
 
 type PriceCardType = { bgcolor: string };
 export const PriceCard = (props: PriceCardType) => {

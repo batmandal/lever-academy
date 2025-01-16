@@ -56,17 +56,12 @@ export const Header = () => {
       <div className="flex gap-5 ">
         {headerTabs.map((item, index) => {
           return (
-            <a href={item.url} key={index}>
+            <a href={item.url} key={index} className="text-textsecondary">
               {item.title}
             </a>
           );
         })}
       </div>
-      {/* <div className="py-4 px-6 w-fit h-fit text-white flex bg-button rounded-full gap-2">
-        <div className="w-16 cursor-pointer   flex justify-center">Log In</div>
-        <span className="w-px bg-white "></span>
-        <div className="w-16 cursor-pointer flex justify-center">Sign Up</div>
-      </div> */}
       <div className="flex">
         <div className="rounded-l-full bg-[#3f188c] ">
           <div
@@ -86,7 +81,7 @@ export const Header = () => {
               isClickeds ? "translate-y-[-3px]" : "translate-y-[-6px]"
             }`}
           >
-            sign up{" "}
+            sign up
           </div>
         </div>
       </div>

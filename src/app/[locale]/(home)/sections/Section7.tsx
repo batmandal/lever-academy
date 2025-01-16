@@ -1,7 +1,7 @@
-import { FrequentlyQuestionPart } from "@/components";
 import { FrequentlyQuestions } from "@/data";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { FrequentlyQuestionPart } from "../components";
 
 export const Section7 = () => {
   const t = useTranslations("Section7");
