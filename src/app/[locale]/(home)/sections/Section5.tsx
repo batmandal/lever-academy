@@ -23,6 +23,16 @@ export const Section5 = () => {
           className="swiper  "
           autoplay={{ delay: 2500, disableOnInteraction: false }}
           modules={[Autoplay]}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            1240: {
+              slidesPerView: 2,
+              spaceBetween: 36,
+            },
+          }}
         >
           <SwiperSlide>
             <CommentCard />

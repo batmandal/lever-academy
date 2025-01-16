@@ -1,8 +1,8 @@
 "use client";
 
-import { LanguageIcon, SearchIcon } from "@/assets/svg";
+import { LanguageIcon, SearchIcon } from "@/assets/svg"; // import { usePathname } from "@/i18n/routing";
 import { Modal } from "@mui/material";
-import { useParams, useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 
 export const SpecialButton = () => {
@@ -10,14 +10,20 @@ export const SpecialButton = () => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const router = useRouter();
-  const params = useParams();
+
+  const pathname = usePathname();
+  const locale = pathname.split("/")[1];
+
   const changeLanguage = () => {
-    if (params.locale === "en") {
-      router.push("./mn");
+    if (locale === "en") {
+      router.push(pathname.replace("/en", "/mn"));
+    } else if (locale === "mn") {
+      router.push(pathname.replace("/mn", "/en"));
     } else {
-      router.push("./en");
+      router.push(`/en${pathname}`);
     }
   };
+
   return (
     <div className="flex flex-col gap-5 ">
       <div

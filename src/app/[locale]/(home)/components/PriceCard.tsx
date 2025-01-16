@@ -8,7 +8,7 @@ export const PriceCard = (props: PriceCardType) => {
 
   return (
     <div
-      className={`p-9 rounded-3xl w-full flex flex-col gap-8`}
+      className={`p-9 rounded-3xl w-[396px] flex flex-col gap-8`}
       style={{ backgroundColor: bgcolor }}
     >
       <div className="flex flex-col gap-9">

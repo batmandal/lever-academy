@@ -11,7 +11,7 @@ export const Section4 = () => {
         </h2>
         <p className="text-textsecondary text-[22px]">{t("helpertext")}</p>
       </div>
-      <div className="flex gap-9">
+      <div className="flex justify-center gap-8 flex-wrap">
         <PriceCard bgcolor="#f4f7ff" />
         <PriceCard bgcolor="#f9f9f9" />
         <PriceCard bgcolor="#fff2eb" />

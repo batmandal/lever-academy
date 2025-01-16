@@ -26,7 +26,7 @@ export const Section2 = () => {
         <p className="text-textsecondary text-[22px]">{t("helpertext")}</p>
       </div>
       <div>
-        <div className="w-full flex gap-2">
+        <div className="w-full flex gap-2 flex-wrap">
           {categories.map((category, index) => {
             return (
               <div
