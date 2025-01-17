@@ -15,6 +15,9 @@ export default {
         textsecondary: "#41404b",
         button: "#6928EA",
       },
+      backgroundImage: {
+        'bgImg': "url('/public/background.avif')"
+      }
     },
   },
   plugins: [],
