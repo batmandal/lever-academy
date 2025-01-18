@@ -9,7 +9,9 @@ const footerContents = [
   { text: "Features", link: "features" },
   { text: "Sign In", link: "" },
   { text: "Terms Condition", link: "/terms-condition" },
+
   { text: "About Us", link: "/about-us" },
+
   { text: "Sign Up", link: "" },
   { text: "Privacy Policy", link: "/privacy-policy" },
 ];
