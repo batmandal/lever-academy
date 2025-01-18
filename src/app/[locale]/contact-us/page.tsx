@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components";
+import { ArrowForward } from "@mui/icons-material";
 
 const contactCardJson = [
   {
@@ -22,16 +23,16 @@ const contactCardJson = [
 
 const ContactUs = () => {
   return (
-    <div className="flex  flex-col gap-28">
-      <section className="flex flex-col h-screen gap-y-12 bg-gradient-to-b from-[#E8F0FF] to-[#FFF8E5] items-center justify-center">
-        <h1 className="text-8xl font-bold text-center text-textprimary mb-4 pt-96">
+    <div className="flex flex-col items-center gap-48">
+      <section className="flex flex-col h-screen w-screen gap-y-12 bg-gradient-to-b from-[#E8F0FF] to-[#FFF8E5] items-center justify-center">
+        <h1 className="text-8xl font-bold text-center text-textprimary  mb-4 pt-96">
           Love To Hear From You <br /> Get In Touch
         </h1>
         <p className="text-center text-2xl text-textsecondary mb-8">
           Create SEO-optimized and plagiarism-free content for your blogs,
           <br /> ads, emails, and website 10X faster.
         </p>
-        <div className="bg-[#FFFFFF] py-16 px-12 w-[924px] h-[570px] shadow-xd rounded-3xl ">
+        <div className="bg-white py-16 px-12 w-[924px] h-[570px] shadow-lg rounded-3xl ">
           <form>
             <div className="flex flex-col md:flex-row gap-4 mb-4">
               <input
@@ -63,14 +64,13 @@ const ContactUs = () => {
           </form>
         </div>
       </section>
-      <div></div>
-      <div className="container px-32 py-32 w-full gap-y-64 flex flex-col">
-        <section className="flex w-full gap-6">
+      <div className="container w-full gap-32 flex flex-col">
+        <section className="flex w-full  gap-6">
           {contactCardJson.map((item, index) => {
             return (
               <div
                 key={index}
-                className="flex w-full shadow-lg rounded-2xl bg-slate-50 py-12 px-10 gap-6 flex-col items-center cursor-pointer gap-y-12"
+                className="flex w-full  rounded-2xl bg-[#f9f9f9] py-12 px-10 gap-6 flex-col items-center cursor-pointer gap-y-12"
               >
                 <img src={item.icon} className="w-16 h-16" />
                 <h3 className="text-4xl text-textprimary font-bold">
@@ -79,14 +79,14 @@ const ContactUs = () => {
                 <p className="text-lg text-textsecondary font-normal">
                   {item.text}
                 </p>
-                <button className="text-2xl font-semibold transition ease-in-out duration-150 hover:text-button">
-                  Contact now --&#62;
+                <button className="text-2xl transition ease-in-out items-center duration-150 gap-3 flex hover:text-button">
+                  Contact now <ArrowForward />
                 </button>
               </div>
             );
           })}
         </section>
-        <section className="h-full">
+        <section className="h-full mb-32">
           <div className="LinearBackground w-full flex py-28 text-center justify-center rounded-3xl">
             <div className="flex flex-col items-center ">
               <h1 className="text-7xl font-bold text-center text-textprimary mb-4">
