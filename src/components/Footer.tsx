@@ -18,7 +18,7 @@ const footerContents = [
 
 export const Footer = () => {
   return (
-    <div className="w-full px-32 ">
+    <div className="w-full px-32 mt-40">
       <div className="w-full flex justify-between pb-14 ">
         <div className=" w-[25%]">
           <h3 className="text-textprimary  text-[24px]">WordCraft</h3>

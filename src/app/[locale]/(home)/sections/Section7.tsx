@@ -9,7 +9,7 @@ export const Section7 = () => {
 
   return (
     <div
-      className="w-full flex flex-col justify-center h-screen items-center"
+      className="w-full flex flex-col justify-center h-[85vh]  items-center"
       id="Section7"
     >
       <div className="text-center mb-16">

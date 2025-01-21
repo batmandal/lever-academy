@@ -52,7 +52,7 @@ export const Header = () => {
      } ${lastScrollY === 0 ? "bg-transparent" : "bg-white shadow-md"}
      `}
     >
-      <img src="logo.png" alt="png" className="h-7" />
+      <img src="/logo.png" alt="png" className="h-7" />
       <div className="flex gap-5 ">
         {headerTabs.map((item, index) => {
           return (
@@ -70,7 +70,7 @@ export const Header = () => {
               isClicked ? "translate-y-[-3px]" : "translate-y-[-6px]"
             }`}
           >
-            sign in{" "}
+            sign in
           </div>
         </div>
         <span className="w-px h-[50%] bg-white"></span>
