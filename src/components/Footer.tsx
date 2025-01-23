@@ -6,7 +6,7 @@ const footerContents = [
   { text: "Home", link: "/" },
   { text: "Contact Us", link: "/contact-us" },
   { text: "404 Page", link: "" },
-  { text: "Features", link: "features" },
+  { text: "Features", link: "/features" },
   { text: "Sign In", link: "" },
   { text: "Terms Condition", link: "/terms-condition" },
   { text: "About Us", link: "/about-us" },
