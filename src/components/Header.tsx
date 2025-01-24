@@ -57,8 +57,8 @@ export const Header = () => {
     >
       <img src="/logo.png" alt="png" className="h-7" />
       <div className="flex gap-5 text-textsecondary">
-        <a href="/">Home</a>
-        <a href="#Section7">FAQ</a>
+        <Link href="/">Home</Link>
+        <Link href="#Section7">FAQ</Link>
         <div className="flex flex-col cursor-pointer">
           <p onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
             Pages <KeyboardArrowDown />
@@ -70,7 +70,7 @@ export const Header = () => {
               onMouseLeave={hideDropdown}
               className="bg-transparent h-[400px] w-[300px] absolute left-[45%] top-14  p-4"
             >
-              <div className="w-full h-full bg-white rounded-3xl shadow-2xl p-4">
+              <div className="w-full h-full bg-white rounded-3xl shadow-xl p-4">
                 <Link href="/terms-condition">terms and conditions</Link>
               </div>
             </div>
