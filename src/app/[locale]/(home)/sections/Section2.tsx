@@ -18,7 +18,7 @@ export const Section2 = () => {
   const t = useTranslations("Section2");
   const [isActive, setIsActive] = useState(categories[0]);
   return (
-    <div className="w-full mt-28 flex flex-col gap-10">
+    <div className="w-full flex flex-col gap-10">
       <div>
         <p className="text-textprimary text-[48px] font-bold">
           {t("maintext")}
