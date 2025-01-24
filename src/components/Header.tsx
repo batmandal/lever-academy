@@ -1,17 +1,20 @@
 "use client";
 
+import { Link } from "@/i18n/routing";
+import { KeyboardArrowDown } from "@mui/icons-material";
+
 import { useEffect, useState } from "react";
 
-const headerTabs = [
-  { title: "Home", url: "/" },
-  { title: "FAQ", url: "#Section7" },
-  { title: "Pages" },
-];
 export const Header = () => {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isClicked, setIsClicked] = useState(false);
   const [isClickeds, setIsClickeds] = useState(false);
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+
+  const showDropdown = () => setIsDropdownVisible(true);
+  const hideDropdown = () => setIsDropdownVisible(false);
+
   const handleClick = () => {
     setIsClicked(true);
     setTimeout(() => {
@@ -53,14 +56,26 @@ export const Header = () => {
      `}
     >
       <img src="/logo.png" alt="png" className="h-7" />
-      <div className="flex gap-5 ">
-        {headerTabs.map((item, index) => {
-          return (
-            <a href={item.url} key={index} className="text-textsecondary">
-              {item.title}
-            </a>
-          );
-        })}
+      <div className="flex gap-5 text-textsecondary">
+        <a href="/">Home</a>
+        <a href="#Section7">FAQ</a>
+        <div className="flex flex-col cursor-pointer">
+          <p onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
+            Pages <KeyboardArrowDown />
+          </p>
+
+          {isDropdownVisible && (
+            <div
+              onMouseEnter={showDropdown}
+              onMouseLeave={hideDropdown}
+              className="bg-transparent h-[400px] w-[300px] absolute left-[45%] top-14  p-4"
+            >
+              <div className="w-full h-full bg-white rounded-3xl shadow-2xl p-4">
+                <Link href="/terms-condition">terms and conditions</Link>
+              </div>
+            </div>
+          )}
+        </div>
       </div>
       <div className="flex">
         <div className="rounded-l-full bg-[#3f188c] ">
