@@ -21,7 +21,7 @@ const Features = () => {
     </section>
     <section className="flex flex-col h-full py-16 gap-y-16">
       <div className="flex flex-col gap-y-4">
-        <h2 className="text-6xl text-center text-textprimary font-bold">Wordcraft's Powerful Features</h2>
+        <h2 className="text-6xl text-center text-textprimary font-bold">Wordcrafts Powerful Features</h2>
         <p className="text-2xl text-center text-textsecondary">Growth-accelerating products for startups, ecommerce stores, angel investors, and more.</p>
       </div>
       <div className="flex justify-center gap-x-24">
