@@ -56,6 +56,7 @@ export const Header = () => {
      `}
     >
       <img src="/logo.png" alt="png" className="h-7" />
+
       <div className="flex gap-5 text-textsecondary">
         <Link href="/">Home</Link>
         <Link href="#Section7">FAQ</Link>
@@ -76,6 +77,15 @@ export const Header = () => {
             </div>
           )}
         </div>
+      <div className="flex gap-5 ">
+        {/* {headerTabs.map((item, index) => {
+          return (
+            <a href={item.url} key={index} className="text-textsecondary">
+              {item.title}
+            </a>
+          );
+        })} */}
+
       </div>
       <div className="flex">
         <div className="rounded-l-full bg-[#3f188c] ">
@@ -101,5 +111,7 @@ export const Header = () => {
         </div>
       </div>
     </div>
-  );
+    </div>
+    
+            )
 };
