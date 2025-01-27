@@ -8,6 +8,7 @@ import {
   Section5,
   // Section6,
   Section7,
+  VisualDemoSection,
   WhyChooseOurPlatformSection,
 } from "./sections";
 
@@ -15,9 +16,10 @@ const Home = () => {
   return (
     <div className="Home w-full flex flex-col">
       <Section1 />
-      <div className="px-32 flex flex-col gap-28">
+      <div className="px-32 flex flex-col gap-32">
         <WhyChooseOurPlatformSection />
         <Section2 />
+        <VisualDemoSection />
         <Section3 />
         <Section4 />
         <Section5 />

@@ -47,3 +47,11 @@ body {
   /* color: var(--color); */
   /* row-gap: 4rem; */
 }
+.carousel {
+  animation: carousel 12s linear infinite;
+}
+@keyframes carousel {
+  to {
+    transform: translate(-100%);
+  }
+}

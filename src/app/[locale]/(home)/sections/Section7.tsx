@@ -8,10 +8,7 @@ export const Section7 = () => {
   const [isQuestionIndex, setIsQuestionIndex] = useState<number | null>(null);
 
   return (
-    <div
-      className="w-full flex flex-col justify-center h-[85vh]  items-center"
-      id="Section7"
-    >
+    <div className="w-full flex flex-col  h-[85vh] items-center" id="Section7">
       <div className="text-center mb-16">
         <h2 className="text-textprimary text-[56px] font-bold">
           {t("maintext")}

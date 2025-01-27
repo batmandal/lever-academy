@@ -26,11 +26,11 @@ export const FrequentlyQuestionPart = (props: FrequentlyQuestionPartType) => {
   };
 
   return (
-    <div className="mb-10  ">
+    <div className="mb-12  ">
       <div className="flex justify-between items-center mb-3">
-        <div className="flex gap-3">
-          <span className="text-xl font-bold">{questionNo}</span>
-          <p className="text-xl font-bold">{question}</p>
+        <div className="flex gap-3 font-bold text-textprimary text-3xl">
+          <span>{questionNo}</span>
+          <p>{question}</p>
         </div>
         <span
           onClick={handleClick}
