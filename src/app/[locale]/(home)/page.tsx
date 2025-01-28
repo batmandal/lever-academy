@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className="Home w-full flex flex-col">
       <Section1 />
-      <div className="px-32 flex flex-col gap-32">
+      <div className="px-32 flex flex-col gap-36">
         <WhyChooseOurPlatformSection />
         <Section2 />
         <VisualDemoSection />

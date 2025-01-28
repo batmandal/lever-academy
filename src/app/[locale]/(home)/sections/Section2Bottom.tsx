@@ -1,3 +1,5 @@
+import { Button } from "@/components";
+
 export const VisualDemoSection = () => {
   return (
     <div>
@@ -12,26 +14,94 @@ export const VisualDemoSection = () => {
       </div>
       <div className="w-full overflow-hidden h-[85vh]  ">
         <div className="w-fit  flex  h-full  ">
-          <div className="carousel h-full w-fit flex gap-6 ">
-            <div className=" h-full w-[700px] bg-[#ecf1ff] rounded-3xl grid place-content-center">
-              1
+          <div className="carousel h-full w-fit flex  ">
+            <div className=" h-full w-[700px] bg-[#ecf1ff] rounded-3xl flex flex-col justify-between p-10 mr-6">
+              <div className="rounded-2xl overflow-hidden h-1/2">
+                <img src="/math-teacher.jpg" />
+              </div>
+              <section>
+                <h4 className="font-bold text-textprimary">Courses</h4>
+                <p className="text-textsecondary">
+                  Our team has updated and uploaded the most effective lessons
+                  to help you learn and improve your IELTS skills, guiding you
+                  toward achieving your desired score.
+                </p>
+              </section>
+              <Button label={"Get Started Free"} href={"/"} />
             </div>
-            <div className=" h-full w-[700px] bg-[#f9f9f9] rounded-3xl grid place-content-center">
-              2
+            <div className=" h-full w-[700px] bg-[#f9f9f9] rounded-3xl flex flex-col justify-between p-10 mr-6">
+              <div className="rounded-2xl overflow-hidden h-1/2">
+                <img src="/math-teacher.jpg" />
+              </div>
+              <section>
+                <h4 className="font-bold">Tests</h4>
+                <p className="text-textsecondary">
+                  We have developed AI-generated practice tests, offering a
+                  limitless amount of tests for students preparing for the
+                  Entrance Examination.
+                </p>
+              </section>
+              <Button label={"Get Started Free"} href={"/"} />
             </div>
-            <div className="mr-6 h-full w-[700px]  bg-[#fff2eb] rounded-3xl grid place-content-center">
-              3
+            <div className=" h-full w-[700px] bg-[#fff2eb] rounded-3xl flex flex-col justify-between p-10 mr-6">
+              <div className="rounded-2xl overflow-hidden h-1/2">
+                <img src="/math-teacher.jpg" />
+              </div>
+              <section>
+                <h4 className="font-bold">Analytics</h4>
+                <p className="text-textsecondary">
+                  Our unique advantage lies in the AI&apos;s ability to analyze
+                  each student&apos;s strengths and weaknesses, creating
+                  personalized tests designed to target and improve their weaker
+                  areas.
+                </p>
+              </section>
+              <Button label={"Get Started Free"} href={"/"} />
             </div>
           </div>
-          <div className="carousel h-full w-fit flex gap-6 ">
-            <div className=" h-full w-[700px] bg-[#ecf1ff]0 rounded-3xl grid place-content-center">
-              1
+          <div className="carousel h-full w-fit flex  ">
+            <div className=" h-full w-[700px] bg-[#ecf1ff] rounded-3xl flex flex-col justify-between p-10 mr-6">
+              <div className="rounded-2xl overflow-hidden h-1/2">
+                <img src="/math-teacher.jpg" />
+              </div>
+              <section>
+                <h4 className="font-bold text-textprimary">Courses</h4>
+                <p className="text-textsecondary">
+                  Our team has updated and uploaded the most effective lessons
+                  to help you learn and improve your IELTS skills, guiding you
+                  toward achieving your desired score.
+                </p>
+              </section>
+              <Button label={"Get Started Free"} href={"/"} />
             </div>
-            <div className=" h-full w-[700px] bg-[#f9f9f9] rounded-3xl grid place-content-center">
-              2
+            <div className=" h-full w-[700px] bg-[#f9f9f9] rounded-3xl flex flex-col justify-between p-10 mr-6">
+              <div className="rounded-2xl overflow-hidden h-1/2">
+                <img src="/math-teacher.jpg" />
+              </div>
+              <section>
+                <h4 className="font-bold">Tests</h4>
+                <p className="text-textsecondary">
+                  We have developed AI-generated practice tests, offering a
+                  limitless amount of tests for students preparing for the
+                  Entrance Examination.
+                </p>
+              </section>
+              <Button label={"Get Started Free"} href={"/"} />
             </div>
-            <div className=" mr-6 h-full w-[700px] bg-[#fff2eb] rounded-3xl grid place-content-center">
-              3
+            <div className=" h-full w-[700px] bg-[#fff2eb] rounded-3xl flex flex-col justify-between p-10 mr-6">
+              <div className="rounded-2xl overflow-hidden h-1/2">
+                <img src="/math-teacher.jpg" />
+              </div>
+              <section>
+                <h4 className="font-bold">Analytics</h4>
+                <p className="text-textsecondary">
+                  Our unique advantage lies in the AI&apos;s ability to analyze
+                  each student&apos;s strengths and weaknesses, creating
+                  personalized tests designed to target and improve their weaker
+                  areas.
+                </p>
+              </section>
+              <Button label={"Get Started Free"} href={"/"} />
             </div>
           </div>
         </div>

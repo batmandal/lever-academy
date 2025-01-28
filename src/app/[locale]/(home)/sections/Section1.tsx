@@ -26,19 +26,29 @@ export const Section1 = () => {
   return (
     <div
       id="Section1"
-      className="Section1 LinearBackground  flex flex-col text-center pt-52 items-center w-full  "
+      className="Section1 LinearBackground  flex flex-col text-center pt-32 items-center w-full h-fit  "
     >
-      <h1 className="animation text-[80px] w-[1000px] text-textprimary font-bold">
+      <p className="animation text-[80px] w-[1000px]   text-textprimary font-bold leading-tight">
         {t("maintext")}
-      </h1>
+      </p>
       <p className="animation w-[744px]  text-[24px]  text-textsecondary">
         {t("helpertext")}
       </p>
-      <div className="animation mb-20 mt-14">
+      <div className="animation mb-40 mt-14">
         <Button href="/" label={bt("mainButtontext")} />
       </div>
 
-      <div></div>
+      <div className="relative w-full flex justify-center  h-52">
+        <div className="animation absolute bottom-0 z-10">
+          <div className="h-80 w-64">
+            <img src="/iphone.avif" />
+          </div>
+        </div>
+        <div className="flex absolute bottom-0 gap-4">
+          <img className="animation" src="/graphic.avif" />
+          <img className="animation" src="/graphic2.avif" />
+        </div>
+      </div>
     </div>
   );
 };
