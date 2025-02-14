@@ -26,7 +26,7 @@ export const Section1 = () => {
   return (
     <div
       id="Section1"
-      className="Section1 LinearBackground  flex flex-col text-center pt-32 items-center w-full h-fit  "
+      className="Section1 LinearBackground  flex flex-col text-center pt-32 items-center w-full h-fit "
     >
       <p className="animation text-[80px] w-[1000px]   text-textprimary font-bold leading-tight">
         {t("maintext")}

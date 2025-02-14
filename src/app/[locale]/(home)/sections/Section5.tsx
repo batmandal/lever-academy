@@ -37,21 +37,6 @@ export const Section5 = () => {
           <SwiperSlide>
             <CommentCard />
           </SwiperSlide>
-          <SwiperSlide>
-            <CommentCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CommentCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CommentCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CommentCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CommentCard />
-          </SwiperSlide>
         </Swiper>
       </div>
     </div>

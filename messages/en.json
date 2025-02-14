@@ -5,9 +5,71 @@
     "helpertext": "Revolutionize education with adaptive, AI-powered assessments tailored to each student’s needs. Smart Testing for Smarter Learning"
   },
 
+  "Header": {
+    "home": "Home",
+    "fuckU": "FAQ",
+    "pages": "Pages",
+    "about": "About Us",
+    "terms":"Tems and conditions",
+    "features":"Features",
+    "contact":"Contact us",
+    "signIn": "Sign In",
+    "signUp": "Sign Up"
+  },
+
+  "Footer": {
+    "text": "Revolutionize education with adaptive, AI-powered assessments tailored to each student’s needs. Smart Testing for Smarter Learning",
+    "home": "Home",
+    "contact": "Contact us",
+    "features": "Features",
+    "about": "About Us",
+    "terms": "Tems and conditions",
+    "privacy": "Privacy policy",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "404Page": "404"
+  },
+
+  "Section1Bottom":{
+    "WhyChoose":"Why Choose Our Platform",
+    "adaptive_testing": {
+      "title": "Adaptive Testing:",
+      "text": "Our AI identifies gaps and creates questions to target specific weaknesses."
+    },
+    "instant_insights": {
+      "title": "Instant Insights:",
+      "text": "Real-time analytics provide actionable feedback for better learning outcomes."
+    },
+    "progress_tracking": {
+      "title": "Progress Tracking:",
+      "text": "Students can achieve their academic goals by monitoring their progress, receiving personalized feedback, and customized study plans."
+    },
+    "global_connectivity": {
+      "title": "Global Connectivity:",
+      "text": "Teachers from different institutions, schools, and countries can easily connect with their students."
+    }
+   },
+
   "Section2": {
     "maintext": " All the skills you need in one place",
     "helpertext": "Create SEO-optimized and plagiarism-free content for your blogs, ads, emails. and website 10X faster,"
+  },
+
+  "Section2Bottom": {
+    "title": "Courses, tests, and analytics",
+    "cardOne": {
+      "courses": "Courses",
+      "coursesText": "Our team has updated and uploaded the most effective lessons to help you learn and improve your IELTS skills, guiding you toward achieving your desired score."
+    },
+    "cardTwo": {
+      "tests": "Tests",
+      "testsText": "We have developed AI-generated practice tests, offering a limitless amount of tests for students preparing for the Entrance Examination."
+    },
+    "cardThree":{
+      "analytics": "Analytics",
+      "analyticsText": " Our unique advantage lies in the AI&apos;s ability to analyze each student&apos;s strengths and weaknesses, creating personalized tests designed to target and improve their weaker areas."
+    }
+   
   },
 
   "Section3": {
@@ -28,13 +90,299 @@
   "Section6": { "maintext": "", "helpertext": "" },
 
   "Section7": {
-    "maintext": "Frequently asked questions?",
-    "helpertext": "Growth-accelerating products for startups, ecommerce stores, and more."
+    "maintext": "Frequently asked questions",
+    "question1": {
+      "questionNo": "01",
+      "question": "How long is the exam valid for?",
+      "answer": "The exam you purchased and its results will never expire."
+    },
+    "question2": {
+      "questionNo": "02",
+      "question": "Are there any free products or services?",
+      "answer": "The first chapter and introductory lessons of all online courses are free. Additionally, each course includes one free exam."
+    },
+    "question3": {
+      "questionNo": "03",
+      "question": "How can I become a partner?",
+      "answer": "If you wish to sell your online courses through our platform, please contact us at info@lever.mn."
+    },
+    "question4": {
+      "questionNo": "04",
+      "question": "Do you provide certificates?",
+      "answer": "Some courses offer certificates, while others are designed solely to help improve skills."
+    },
+    "question5": {
+      "questionNo": "05",
+      "question": "Does the platform support multiple languages?",
+      "answer": "We have English and Mongolian versions."
+    },
+    "question6": {
+      "questionNo": "06",
+      "question": "How does the platform help improve teacher efficiency?",
+      "answer": "Teachers can use our tools to generate custom tests, analyze student performance, and provide targeted feedback, saving time and improving instructional effectiveness."
+    }
   },
 
-  "Button": {
-    "mainButtontext": "Get Started Free",
-    "login": "Log In",
-    "signup": "Sign Up"
+
+  "AboutUs": {
+    "mainText": "All The Skills You Need In One Place",
+    "helpertext": "Master Every Skill with Ease",
+    "coursesTests": "Courses, Tests, and Analytics",
+    "cardmain": "Optimize Your Learning From Today",
+    "cardsub": "Growth-accelerating products for students, educators, and more.",
+    "Courses": {
+      "title": "Courses",
+      "text": "Our team has updated and uploaded the most effective lessons to help you learn and improve your IELTS skills, guiding you toward achieving your desired score."
+    },
+    "Tests": {
+      "title": "Tests",
+      "text": "We have developed AI-generated practice tests, offering a limitless amount of tests for students preparing for the Entrance Examination."
+    },
+    "Analytics": {
+      "title": "Analytics",
+      "text": "Our unique advantage lies in the AI's ability to analyze each student's strengths and weaknesses, creating personalized tests designed to target and improve their weaker areas."
+    },
+    "missAndVis": "Our Mission And Vision",
+    "mission": {
+      "title": "Mission",
+      "text": "To create a unified database of all possible exams that can be provided."
+    },
+    "vision": {
+      "title": "Vision",
+      "text": "To inspire a transformative change in Mongolia's education system and steadily raise the quality of learning for all."
+    },
+    "comments": {
+      "title": "What Others Are Saying",
+      "subTitle": "Growth-accelerating products for students, educators, and more.",
+      "text": "Lever Education delivers exceptional preparation for IELTS, SAT and ЭШ with experienced instructors and a well-designed curriculum. The teachers really know how to connect with the students. If you want fun and good results Lever Education is the best choice you could make!!!"
+    }
+  },
+
+  "Features": {
+    "mainText": "Key Features Overview of Lever",
+    "helperText": "Smart Testing for Smarter Learning",
+    "featureOne": {
+      "title": "1. AI-Powered Adaptive Testing",
+      "text": "Lever uses AI to generate practice tests tailored to each student’s needs, helping them target specific weaknesses and improve their performance efficiently."
+    },
+    "featureTwo": {
+      "title": "2. Real-Time Analytics & Instant Insights",
+      "text": "The platform provides real-time feedback and actionable insights based on test results, allowing students to understand their progress and focus on areas that need improvement."
+    },
+    "featureThree": {
+      "title": "3. Unlimited Practice Tests",
+      "text": "Students have access to a limitless number of AI-generated practice exams, ensuring that they can always find fresh material for practice and skill improvement."
+    },
+    "featureFour": {
+      "title": "4. Progress Tracking",
+      "text": "Lever helps students track their learning journey with detailed reports, personalized feedback, and customized study plans, all designed to meet their academic goals."
+    },
+    "featureFive":{
+      "title": "5. Global Connectivity",
+      "text": "Teachers from various schools, institutions, and countries can easily connect with their students, fostering international collaboration and diverse educational perspectives."  
+    },
+    "featureSix":{
+      "title": "6. Unified Exam Database",
+      "text": "Lever offers a comprehensive database of all possible exams, making it easy for students to access, prepare, and organize their exam materials in one place."
+    },
+    "featureSeven": {
+      "title": "7. Mobile-Friendly & Accessible",
+      "text": "The platform is accessible from both desktop and mobile devices, providing flexibility and convenience for students and teachers to learn and teach from anywhere."
+    },
+    "featureEight": {
+      "title": "8. Introductory Lessons & Free Content",
+      "text": "Students can access the first chapters and introductory lessons of all online courses for free, giving them a chance to explore the material before committing to full access."
+    },
+    "featureNine": {
+      "title": "9. Customizable for Institutions",
+      "text": "Schools and institutions can customize Lever to align with their specific curricula, testing standards, and learning needs, ensuring a personalized experience for their students."
+    },
+    "featureTen": {
+      "title": "10. Global & Local Exam Support",
+      "text": "Lever includes practice tests for a wide range of exams, from international certifications to local entrance exams, ensuring comprehensive exam preparation for students worldwide."
+    },
+    "featureEleven": {
+      "title": "11. Certificates for Selected Courses",
+      "text": "Some courses on Lever provide certificates upon completion, while others focus solely on skill improvement without certification."
+    }
+  },
+
+  "TermsAndConditions": { 
+    "mainText": "Terms and condition for service",
+    "helperText": "Please note that these Terms and Conditions of Service were last revised in January _____, 2025.",
+    "termOne": {
+      "title": "1. General",
+      "text": "Lever’s web application and related services (collectively referred to as the “Service”) are operated by Lever, Inc. (“Lever,” “us,” or “we”). Access to and use of the Service are subject to the following Terms and Conditions of Service (“Terms and Conditions”). By accessing or using any part of the Service, you confirm that you have read, understood, and agree to be bound by these Terms and Conditions, including any future updates. Lever may revise, update, or modify these Terms and Conditions at its discretion.If such changes occur, we will post a notice on the web application for at least 7 days after the changes are made and indicate at the bottom of these Terms and Conditions the date they were last updated. Any revisions will become effective either (i) at the end of the 7-day notification period or (ii) the first time you access or use the Service after the changes, whichever comes first. If you do not agree to comply with these Terms and Conditions, you are not authorized to use or access the Service.",
+      "note": {
+        "noteTitle": "PLEASE NOTE:",
+        "noteText":
+          "These Terms and Conditions include a mandatory arbitration clause for dispute resolution under certain circumstances. This means disputes will be resolved individually through arbitration, not via jury trials or class action lawsuits."
+      }
+    },
+    "termTwo":{
+      "title": "2. Description of Website and Service",
+      "text": "The Service allows users to access and use a variety of educational services, including learning or practicing a language. Lever may, in its sole discretion and at any time, update, change, suspend, make improvements to or discontinue any aspect of the Service, temporarily or permanently."
+    },
+    "termThree":{
+      "title": "3. Acceptable Use of the Services",
+      "text": "You are responsible for your use of the Services, and for any use of the Services made using your account. Our goal is to create a positive, useful, and safe user experience. To promote this goal, we prohibit certain kinds of conduct that may be harmful to other users or to us. When you use the Services, you must comply with our Community Guidelines."
+    },
+    "termFour": {
+      "title": "4. Additional Terms",
+      "text": "Some of our Services have additional terms and conditions (“Additional Terms”). Where Additional Terms apply to a Service, we will make them available for you to read through your use of that Service. By using that Service, you agree to the Additional Terms."
+    },
+    "termFive": {
+      "title": "5. Registration",
+      "text": "In connection with registering for and using the Service, you agree (i) to provide accurate, current and complete information about you and/or your organization as requested by Lever; (ii) to maintain the confidentiality of your password and other information related to the security of your account; (iii) to maintain and promptly update any registration information you provide to Lever, to keep such information accurate, current and complete; and (iv) to be fully responsible for all use of your account and for any actions that take place through your account."
+    },
+    "termSix":{
+      "title": "6. Submission of Content",
+      "text": "As a condition of submitting any ratings, reviews, information, data, text, photographs, audio clips, audiovisual works, translations, flashcards, or other materials on the Service (collectively, “Content”), you hereby grant to Lever a full-paid, royalty free, perpetual, irrevocable, worldwide, nonexclusive, transferable, and sublicensable license to use, reproduce, copy, adapt, modify, merge, distribute, publicly display, and create derivative works from the Content; incorporate the Content into other works; and sublicense through multiple tiers the Content. You acknowledge that this license cannot be terminated by you once your Content is submitted to the Service. You represent that you own or have secured all legal rights necessary for the Content submitted by you to be used by you, Lever, and others as described and otherwise contemplated in these Terms and Conditions. You understand that other users will have access to the Content and that neither they or Lever have any obligation to you or anyone else to maintain the confidentiality of the Content. You will not upload, display, or otherwise provide on or through the Service any Content that: (i) is libelous, defamatory, abusive, threatening, harassing, hateful, offensive, or otherwise violates any law or infringes upon the right of any third party (including copyright, trademark, privacy, publicity, or other personal or proprietary rights); (ii) in Lever’s sole judgment, is objectionable, restricts or inhibits any other person from using the Service, or may expose Lever or its users to any harm or liability of any kind; or (iii) violates Lever’s Community Guidelines."
+    },
+    "termSeven":{
+      "title": "7. Payment Processors",
+      "text": "All financial transactions made in connection with the Service will be processed by a third party in accordance with their respective terms of use, privacy policy, and/or any applicable payment terms and conditions. We encourage you to learn about the practices of such third party. In no event will Lever be responsible for the actions or inactions of any third party payment processor, including, but not limited to, system downtime or payment service outages."
+    },
+    "termEight":{
+      "title": "8. Refund Policy",
+      "text": "All payments are nonrefundable. There are no refunds or credits for Virtual Items or partially used membership periods. However, Lever may grant refunds or credits on a case-by-case basis at our sole discretion. Lever’s grant of a refund or credit in one instance does not obligate Lever to provide a refund or credit in the future, under any circumstances. If you cancel your periodic subscription to a paid Lever service, you will continue to have access to the service through the end of your current billing period."
+    },
+    "termNine":{
+      "title": "9. Miscellaneous",
+      "text": "These Terms and Conditions constitute the entire agreement between Lever and you concerning the subject matter hereof. In the event that any of the Terms and Conditions are held by a court or other tribunal of competent jurisdiction to be unenforceable, such provisions shall  be limited or eliminated to the minimum extent necessary so that these Terms and Conditions shall otherwise remain in full force and effect. A waiver by Lever or you of any provision of these Terms and Conditions or any breach thereof, in any one instance, will not waive such term or condition or any subsequent breach thereof. Lever may assign its rights or obligations under these Terms and Conditions without condition. These Terms and Conditions will be binding upon and will insure to the benefit of Lever and you, and Lever's and your respective successors and permitted assigns. Lever Education (we, our, or us) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our AI-based education platform (the Website). Please read this policy carefully to understand our practices regarding your personal information and how we will treat it."
+    }
+  },
+
+
+  "PrivacyPolicy": {
+    "mainText": "Privacy policy",
+    "helperText": "Please note that these privacy policy of Service were last revised in January _____, 2025.",
+    "policyOne": {
+      "title": "1. Information We Collect",
+      "text": "We collect the following types of information",
+      "note": {
+        "noteTitle": "Personal Information:",
+        "noteText":
+          "Information that identifies you, such as your name, email address, phone number, and any other information you voluntarily provide to us."
+      },
+      "note2": {
+        "noteTitle": "Account Information:",
+        "noteText":
+          "Details such as your username, password, and preferences."
+      },
+      "note3": {
+        "noteTitle": "Usage Data:",
+        "noteText":
+          "information about your interaction with the Website, including pages visited, time spent on the Website, and the features used."
+      },
+      "note4": {
+        "noteTitle": "Device Information:",
+        "noteText":
+          "Data about the device you use to access the Website, such as IP address, browser type, operating system, and device identifiers."
+      },
+      "note5": {
+        "noteTitle": "AI Input and Output Data:",
+        "noteText":
+          "Any information you submit for processing through our AI tools and the resulting outputs."
+      }
+    },
+    "policyTwo": {
+      "title": "2. How We Use Your Information",
+      "text": "We use the information we collect to:",
+      "note": {
+        "noteText":
+          "Provide, operate, and improve our Website and services."
+      },
+      "note2": {
+        "noteText":
+          "Personalize your experience on the Website."
+      },
+      "note3": {
+        "noteText":
+          "Respond to your inquiries and provide customer support."
+      },
+      "note4": {
+        "noteText":
+          "Analyze usage patterns to improve functionality and user experience."
+      },
+      "note5": {
+        "noteText":
+          "Communicate with you about updates, promotions, and other information related to our services."
+      },
+      "note6": {
+        "noteTitle": "",
+        "noteText":
+          "Comply with legal obligations and enforce our terms of service."
+      }
+    },
+    "policyThree":  {
+      "title": "3. How We Share Your Information",
+      "text": "We do not sell your personal information. However, we may share your information in the following circumstances:",
+      "note": {
+        "noteTitle": "Service Providers:",
+        "noteText":
+          " With third-party vendors and service providers who assist us in operating the Website and providing services to you ."
+      },
+      "note2": {
+        "noteTitle": "Legal Requirements:",
+        "noteText":
+          "If required by law or to protect the rights, property, or safety of Lever Education, our users, or others."
+      },
+      "note3": {
+        "noteTitle": "Business Transfers:",
+        "noteText":
+          "In connection with a merger, sale of assets, financing, or acquisition of all or part of our business."
+      }
+    },
+    "policyFour": {
+      "title": "4. Data Security",
+      "text": "We implement appropriate technical and organizational measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction. However, no method of transmission over the internet or electronic storage is completely secure. While we strive to protect your information, we cannot guarantee its absolute security."
+    },
+    "policyFive": {
+      "title": "5. Your Rights and Choices",
+      "text": "Depending on your location, you may have the following rights regarding your personal information:",
+      "note": {
+        "noteTitle": "Access and Correction:",
+        "noteText":
+          "Request access to the personal information we hold about you and correct any inaccuracies."
+      },
+      "note2": {
+        "noteTitle": "Data Deletion:",
+        "noteText":
+          "Request the deletion of your personal information, subject to applicable legal requirements."
+      },
+      "note3": {
+        "noteTitle": "Opt-Out:",
+        "noteText":
+          "Opt out of receiving promotional communications from us."
+      },
+      "note4": {
+        "noteTitle": "Restrict Processing:",
+        "noteText":
+          "Limit the ways we use your personal information in certain circumstances. (To exercise your rights, please contact us at [Insert Contact Email].)"
+      }
+    },
+    "policySix": {
+      "title": "6. Cookies and Tracking Technologies",
+      "text": "We use cookies and similar tracking technologies to enhance your experience on the Website. You can manage your cookie preferences through your browser settings. Please note that disabling cookies may affect the functionality of the Website."
+    },
+    "policySeven": {
+      "title": "7. Children’s Privacy",
+      "text": "Our Website is not directed to children under the age of 13, and we do not knowingly collect personal information from children. If we become aware that we have collected information from a child under 13, we will take steps to delete it."
+    },
+    "policyEight": {
+      "title": "8. International Data Transfers",
+      "text": "If you are accessing the Website from outside [Insert Country], your information may be transferred to, stored, and processed in a country that may not have the same data protection laws as your jurisdiction. By using our Website, you consent to such data transfers."
+    },
+    "policyNine": {
+      "title": "9. Changes to This Privacy Policy",
+      "text": "We may update this Privacy Policy from time to time. We will notify you of any changes by posting the updated policy on the Website and updating the “Effective Date” at the top of this page. Your continued use of the Website after the changes take effect constitutes your acceptance of the revised policy."
+    },
+    "policyTen": {
+      "title": "10. Contact Us",
+      "text": "If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at: info@lever.mn."
+    }
   }
 }
+
+

@@ -1,28 +1,32 @@
 "use client";
 import { Facebook, Instagram } from "@/assets/svg";
 import { Link } from "@/i18n/routing";
+import { useTranslations } from 'next-intl';
 
-const footerContents = [
-  { text: "Home", link: "/" },
-  { text: "Contact Us", link: "/contact-us" },
-  { text: "404 Page", link: "" },
-  { text: "Features", link: "/features" },
-  { text: "Sign In", link: "" },
-  { text: "Terms Condition", link: "/terms-condition" },
-  { text: "About Us", link: "/about-us" },
-  { text: "Sign Up", link: "" },
-  { text: "Privacy Policy", link: "/privacy-policy" },
-];
+
 
 export const Footer = () => {
+const t = useTranslations("Footer");
+
+const footerContents = [
+  { text: t("home"), link: "/" },
+  { text: t("contact"), link: "/contact-us" },
+  { text: t("404Page"), link: "" },
+  { text: t("features"), link: "/features" },
+  { text: t("signIn"), link: "" },
+  { text: t("terms"), link: "/terms-condition" },
+  { text: t("about"), link: "/about-us" },
+  { text: t("signUp"), link: "" },
+  { text: t("privacy"), link: "/privacy-policy" },
+];
+  
   return (
     <div className="w-full px-6 md:px-12 lg:px-32 py-8 bg-gray-50">
       <div className="w-full flex flex-col md:flex-row justify-between gap-8 md:gap-14 pb-14">
         <div className="w-full md:w-[25%] text-center md:text-left">
-          <h3 className="text-textprimary text-xl md:text-2xl font-bold">WordCraft</h3>
+          <h3 className="text-textprimary text-xl md:text-2xl font-bold">Lever</h3>
           <p className="text-textsecondary text-sm md:text-base mt-2">
-            Growth-accelerating products for startups, ecommerce stores, angel
-            investors, and more features.
+          Revolutionize education with adaptive, AI-powered assessments tailored to each student’s needs. Smart Testing for Smarter Learning
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-center md:text-left">
@@ -44,7 +48,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="w-full pt-6 pb-8 flex flex-col md:flex-row justify-between items-center border-t border-solid border-gray-200">
-        <p className="text-textsecondary text-xs md:text-sm">All rights reserved Sailr 2024</p>
+        <p className="text-textsecondary text-xs md:text-sm">Copyright © [2025]. AI Testing Platform. All rights reserved.</p>
         <div className="flex gap-6 mt-4 md:mt-0">
           <div className="w-6 h-6">
             <Facebook />

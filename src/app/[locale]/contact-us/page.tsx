@@ -1,25 +1,25 @@
 "use client";
 
-import { Button } from "@/components";
-import { ArrowForward } from "@mui/icons-material";
+// import { Button } from "@/components";
+// import { ArrowForward } from "@mui/icons-material";
 
-const contactCardJson = [
-  {
-    icon: "public/icon1.png",
-    title: "Sales",
-    text: "Create SEO-optimized and plagiarism-free content for your blogs, emails, and website 10X faster.",
-  },
-  {
-    icon: "public/icon1.png",
-    title: "Live Chat",
-    text: "Create SEO-optimized and plagiarism-free content for your blogs, emails, and website 10X faster.",
-  },
-  {
-    icon: "public/icon1.png",
-    title: "Documentation",
-    text: "Create SEO-optimized and plagiarism-free content for your blogs, emails, and website 10X faster.",
-  },
-];
+// const contactCardJson = [
+//   {
+//     icon: "public/icon1.png",
+//     title: "Sales",
+//     text: "Create SEO-optimized and plagiarism-free content for your blogs, emails, and website 10X faster.",
+//   },
+//   {
+//     icon: "public/icon1.png",
+//     title: "Live Chat",
+//     text: "Create SEO-optimized and plagiarism-free content for your blogs, emails, and website 10X faster.",
+//   },
+//   {
+//     icon: "public/icon1.png",
+//     title: "Documentation",
+//     text: "Create SEO-optimized and plagiarism-free content for your blogs, emails, and website 10X faster.",
+//   },
+// ];
 
 const ContactUs = () => {
   return (
@@ -67,24 +67,23 @@ const ContactUs = () => {
 
       {/* Contact Cards Section */}
       <div className="container px-4 sm:px-8 lg:px-32 py-16 w-full flex flex-col gap-12">
-        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {contactCardJson.map((item, index) => (
             <div
               key={index}
               className="flex flex-col items-center shadow-lg rounded-2xl bg-slate-50 py-8 px-6 gap-6 cursor-pointer hover:shadow-xl transition duration-200"
             >
-              <img src={item.icon} className="w-16 h-16" alt={`${item.title} Icon`} />
               <h3 className="text-xl md:text-2xl text-textprimary font-bold">{item.title}</h3>
               <p className="text-sm md:text-base text-textsecondary text-center">{item.text}</p>
               <button className="text-base md:text-lg font-semibold text-button hover:underline">
-                Contact now → <ArrowForward />
+                Contact now <ArrowForward />
               </button>
             </div>
           ))}
-        </section>
+        </section> */}
 
         {/* Footer Call-to-Action Section */}
-        <section className="w-full bg-gradient-to-r from-purple-100 to-purple-50 py-12 px-6 sm:px-12 rounded-3xl">
+        {/* <section className="w-full bg-gradient-to-r from-purple-100 to-purple-50 py-12 px-6 sm:px-12 rounded-3xl">
           <div className="text-center flex flex-col items-center gap-6">
             <h1 className="text-3xl md:text-5xl font-bold text-textprimary">
               Optimize Your Content <br /> From Today
@@ -96,7 +95,7 @@ const ContactUs = () => {
               <Button href="/" label="Get Start Free" />
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );

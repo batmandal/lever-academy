@@ -2,6 +2,7 @@
 
 import { Link } from "@/i18n/routing";
 import { KeyboardArrowDown } from "@mui/icons-material";
+import { useTranslations } from "next-intl";
 
 import { useEffect, useState } from "react";
 
@@ -47,32 +48,39 @@ export const Header = () => {
     };
   }, [lastScrollY]);
 
+  const t = useTranslations("Header");
+
+
   return (
     <div
-      className={`header w-full flex items-center justify-between h-24 z-10
+      className={`header w-screen flex items-center justify-between h-24 z-10
      px-32 fixed transition-transform duration-500 ${
        showHeader ? "translate-y-0 " : "-translate-y-full "
      } ${lastScrollY === 0 ? "bg-transparent" : "bg-white shadow-md"}
      `}
     >
-      <img src="/logo.png" alt="png" className="h-7" />
+      {/* <img src="/logo.png" alt="png" className="h-7" /> */}
+      <Link href='/' className="text-4xl font-bold text-textprimary transition ease-in-out cursor-pointer hover:text-textsecondary">LEVER</Link>
 
       <div className="flex gap-5 text-textsecondary">
-        <Link href="/">Home</Link>
-        <Link href="#Section7">FAQ</Link>
-        <div className="flex flex-col cursor-pointer">
+        <Link href="/">{t("home")}</Link>
+        <Link href="#Section7">{t("fuckU")}</Link>
+        <div className="flex flex-col cursor-pointer transition ease-in-out">
           <p onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
-            Pages <KeyboardArrowDown />
+            {t("pages")} <KeyboardArrowDown />
           </p>
 
           {isDropdownVisible && (
             <div
               onMouseEnter={showDropdown}
               onMouseLeave={hideDropdown}
-              className="bg-transparent h-[400px] w-[300px] absolute left-[45%] top-14  p-4"
+              className="bg-transparent h-auto absolute left-[45%] top-14  p-4"
             >
-              <div className="w-full h-full bg-white rounded-3xl shadow-xl p-4">
-                <Link href="/terms-condition">terms and conditions</Link>
+              <div className="w-full h-full flex flex-col bg-white rounded-3xl shadow-xl p-3">
+                <Link className="transition ease-in-out text-lg hover:text-textprimary " href="/terms-condition">{t("terms")}</Link>
+                <Link className="transition ease-in-out text-lg hover:text-textprimary " href="/about-us">{t("about")}</Link>
+                <Link className="transition ease-in-out text-lg hover:text-textprimary " href="/features">{t("features")}</Link>
+                <Link className="transition ease-in-out text-lg hover:text-textprimary " href="/contact-us">{t("contact")}</Link>
               </div>
             </div>
           )}
@@ -86,7 +94,7 @@ export const Header = () => {
               isClicked ? "translate-y-[-3px]" : "translate-y-[-6px]"
             }`}
           >
-            sign in
+            {t("signIn")}
           </div>
         </div>
         <span className="w-px h-[50%] bg-white"></span>
@@ -97,10 +105,11 @@ export const Header = () => {
               isClickeds ? "translate-y-[-3px]" : "translate-y-[-6px]"
             }`}
           >
-            sign up
+            {t("signUp")}
           </div>
         </div>
       </div>
     </div>
+    
   );
 };

@@ -2,10 +2,10 @@
 
 import {
   Section1,
-  Section2,
+  // Section2,
   Section3,
-  Section4,
-  Section5,
+  // Section4,
+  // Section5,
   // Section6,
   Section7,
   VisualDemoSection,
@@ -18,11 +18,11 @@ const Home = () => {
       <Section1 />
       <div className="px-32 flex flex-col gap-36">
         <WhyChooseOurPlatformSection />
-        <Section2 />
+        {/* <Section2 /> */}
         <VisualDemoSection />
         <Section3 />
-        <Section4 />
-        <Section5 />
+        {/* <Section4 /> */}
+        {/* <Section5 /> */}
         {/* <Section6 /> */}
         <Section7 />
       </div>
