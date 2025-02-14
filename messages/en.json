@@ -2,7 +2,8 @@
   "Homepage": { "title": "hello world" },
   "Section1": {
     "maintext": "Personalized Learning Through AI-Generated Tests",
-    "helpertext": "Revolutionize education with adaptive, AI-powered assessments tailored to each student’s needs. Smart Testing for Smarter Learning"
+    "helpertext": "Revolutionize education with adaptive, AI-powered assessments tailored to each student’s needs. Smart Testing for Smarter Learning",
+    "mainButtontext": "Get Started"
   },
 
   "Header": {

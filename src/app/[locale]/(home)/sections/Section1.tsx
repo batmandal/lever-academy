@@ -22,7 +22,7 @@ export const Section1 = () => {
     });
   }, []);
   const t = useTranslations("Section1");
-  const bt = useTranslations("Button");
+  
   return (
     <div
       id="Section1"
@@ -35,7 +35,7 @@ export const Section1 = () => {
         {t("helpertext")}
       </p>
       <div className="animation mb-40 mt-14">
-        <Button href="/" label={bt("mainButtontext")} />
+        <Button href="/" label={t("mainButtontext")} />
       </div>
 
       <div className="relative w-full flex justify-center  h-52">
