@@ -6,6 +6,7 @@ import { Autoplay } from "swiper/modules";
 import { CommentCard } from "../(home)/components";
 import { Button } from "@/components";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const AboutUs = () => {
 
@@ -73,7 +74,7 @@ const AboutUs = () => {
                       {slide.description}
                     </p>
                     <div className="w-fit mt-6 md:mt-14">
-                      <Button href="" label="Get Started Free" />
+                      <Button href="" label={t("mainButtontext")} />
                     </div>
                   </div>
                 </div>
@@ -102,12 +103,12 @@ const AboutUs = () => {
     
       <section className="h-full flex flex-col justify-center gap-y-8 md:gap-y-16 items-center px-4 md:px-32">
         <h2 className="text-4xl md:text-5xl lg:text-6xl text-textprimary font-bold text-center">
-          {t("missAndVis")}
+          {t("visionAndMission")}
         </h2>
 
   
         <div className="bg-slate-100 flex flex-wrap md:flex-nowrap gap-6 py-8 md:py-16 px-4 rounded-3xl justify-center items-center h-full w-full">
-          <img
+          <Image
             src="/meeting.avif"
             className="w-full md:w-1/2 rounded-lg"
             alt="Meeting"
@@ -150,7 +151,7 @@ const AboutUs = () => {
               {t("Analytics.text")}
             </p>
           </div>
-          <img
+          <Image
             src="/math-teacher.jpg"
             className="w-full md:w-1/2 rounded-3xl"
             alt="Math Teacher"
@@ -208,7 +209,7 @@ const AboutUs = () => {
               {t("cardsub")}
             </p>
             <div className="w-fit mt-6 md:mt-14">
-              <Button href="" label="Get Started Free" />
+              <Button href="" label={t("mainButtontext")} />
             </div>
           </div>
         </div>

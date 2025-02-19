@@ -90,7 +90,7 @@ export const Header = () => {
         <div className="rounded-l-full bg-[#3f188c] ">
           <div
             onClick={handleClick}
-            className={`bg-button rounded-l-full px-6 py-4 text-white ${
+            className={`bg-button rounded-l-full px-6 py-4 text-white cursor-pointer ${
               isClicked ? "translate-y-[-3px]" : "translate-y-[-6px]"
             }`}
           >
@@ -101,7 +101,7 @@ export const Header = () => {
         <div className="rounded-r-full bg-[#3f188c] ">
           <div
             onClick={handleClick1}
-            className={`bg-button rounded-r-full px-6 py-4 text-white ${
+            className={`bg-button rounded-r-full px-6 py-4 text-white cursor-pointer ${
               isClickeds ? "translate-y-[-3px]" : "translate-y-[-6px]"
             }`}
           >

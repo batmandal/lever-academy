@@ -21,15 +21,15 @@ const footerContents = [
 ];
   
   return (
-    <div className="w-full px-6 md:px-12 lg:px-32 py-8 bg-gray-50">
+    <div className="w-full px-6 md:px-12 lg:px-32 py-6 bg-gray-50">
       <div className="w-full flex flex-col md:flex-row justify-between gap-8 md:gap-14 pb-14">
         <div className="w-full md:w-[25%] text-center md:text-left">
           <h3 className="text-textprimary text-xl md:text-2xl font-bold">Lever</h3>
           <p className="text-textsecondary text-sm md:text-base mt-2">
-          Revolutionize education with adaptive, AI-powered assessments tailored to each student’s needs. Smart Testing for Smarter Learning
+          {t("text")}
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-center md:text-left">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-1 text-center md:text-left">
           {footerContents.map((item, index) => (
             <Link
               href={item.link}

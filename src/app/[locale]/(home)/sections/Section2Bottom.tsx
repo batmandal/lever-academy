@@ -1,5 +1,6 @@
 import { Button } from "@/components";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export const VisualDemoSection = () => {
   const t = useTranslations("Section2Bottom");
@@ -39,13 +40,13 @@ export const VisualDemoSection = () => {
                   className={`h-full w-[700px] ${item.bgColor} rounded-3xl flex flex-col justify-between p-10 mr-6`}
                 >
                   <div className="rounded-2xl overflow-hidden h-1/2">
-                    <img src="/math-teacher.jpg" alt="Visual Demo" />
+                    <Image src="/math-teacher.jpg" alt="Visual Demo" />
                   </div>
                   <section>
                     <h4 className="font-bold text-textprimary">{item.title}</h4>
                     <p className="text-textsecondary">{item.text}</p>
                   </section>
-                  <Button label={"Get Started Free"} href={"/"} />
+                  <Button label={t("mainButtontext")} href={"/"} />
                 </div>
               ))}
             </div>

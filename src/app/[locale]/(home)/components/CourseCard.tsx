@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 
 export const CourseCard = () => {
@@ -10,7 +11,7 @@ export const CourseCard = () => {
       className="courseCard max-w-[290px] flex flex-col max-h-[340px] p-3 bg-[#f9f9f9] hover:bg-button cursor-pointer hover:text-white rounded-[28px]"
     >
       <div className="overflow-hidden rounded-2xl">
-        <img src="math-teacher.jpg" />
+        <Image alt="" src="math-teacher.jpg" />
       </div>
       <div className="p-2 flex flex-col gap-1">
         <h4 className="font-bold text-[20px]">

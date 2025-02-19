@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
+import Image from "next/image";
 
 export const Section1 = () => {
   useEffect(() => {
@@ -28,10 +29,10 @@ export const Section1 = () => {
       id="Section1"
       className="Section1 LinearBackground  flex flex-col text-center pt-32 items-center w-full h-fit "
     >
-      <p className="animation text-[80px] w-[1000px]   text-textprimary font-bold leading-tight">
+      <p className="animation text-[80px] w-[1000px] text-textprimary font-bold leading-tight">
         {t("maintext")}
       </p>
-      <p className="animation w-[744px]  text-[24px]  text-textsecondary">
+      <p className="animation w-[744px]  text-[24px] text-textsecondary">
         {t("helpertext")}
       </p>
       <div className="animation mb-40 mt-14">
@@ -40,13 +41,13 @@ export const Section1 = () => {
 
       <div className="relative w-full flex justify-center  h-52">
         <div className="animation absolute bottom-0 z-10">
-          <div className="h-80 w-64">
-            <img src="/iphone.avif" />
+          <div className="w-[800px]">
+            <Image alt="" src="/iphone1.png"/>
           </div>
         </div>
         <div className="flex absolute bottom-0 gap-4">
-          <img className="animation" src="/graphic.avif" />
-          <img className="animation" src="/graphic2.avif" />
+          <Image alt="" className="animation" src="/graphic.avif" />
+          <Image alt="" className="animation" src="/graphic2.avif" />
         </div>
       </div>
     </div>

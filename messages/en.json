@@ -58,6 +58,7 @@
 
   "Section2Bottom": {
     "title": "Courses, tests, and analytics",
+    "mainButtontext":"Get Started Free",
     "cardOne": {
       "courses": "Courses",
       "coursesText": "Our team has updated and uploaded the most effective lessons to help you learn and improve your IELTS skills, guiding you toward achieving your desired score."
@@ -74,7 +75,7 @@
   },
 
   "Section3": {
-    "maintext": "Get Started Freee Experience the transformative capabilities of - crafting content with Wordcraft AI",
+    "maintext": "Revolutionize education with adaptive, AI-powered assessments tailored to each student’s needs.",
     "helpertext": ""
   },
 
@@ -131,6 +132,8 @@
     "coursesTests": "Courses, Tests, and Analytics",
     "cardmain": "Optimize Your Learning From Today",
     "cardsub": "Growth-accelerating products for students, educators, and more.",
+    "mainButtontext": "Get Started Free",
+    "visionAndMission": "Our Mission And Vision",
     "Courses": {
       "title": "Courses",
       "text": "Our team has updated and uploaded the most effective lessons to help you learn and improve your IELTS skills, guiding you toward achieving your desired score."
@@ -143,7 +146,6 @@
       "title": "Analytics",
       "text": "Our unique advantage lies in the AI's ability to analyze each student's strengths and weaknesses, creating personalized tests designed to target and improve their weaker areas."
     },
-    "missAndVis": "Our Mission And Vision",
     "mission": {
       "title": "Mission",
       "text": "To create a unified database of all possible exams that can be provided."
