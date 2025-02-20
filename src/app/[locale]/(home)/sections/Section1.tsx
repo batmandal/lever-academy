@@ -41,14 +41,10 @@ export const Section1 = () => {
 
       <div className="relative w-full flex justify-center  h-52">
         <div className="animation absolute bottom-0 z-10">
-          <div className="w-[800px]">
-            <Image alt="" src="/iphone1.png"/>
-          </div>
+          <Image alt="iPhone" src="/iphone1.png" width={800} height={600} />
         </div>
-        <div className="flex absolute bottom-0 gap-4">
-          <Image alt="" className="animation" src="/graphic.avif" />
-          <Image alt="" className="animation" src="/graphic2.avif" />
-        </div>
+          <Image alt="Graphic 1" className="animation" src="/graphic.avif" width={400} height={300} />
+          <Image alt="Graphic 2" className="animation" src="/graphic2.avif" width={400} height={300} />
       </div>
     </div>
   );

@@ -56,7 +56,7 @@ const AboutUs = () => {
             slidesPerView={1}
             spaceBetween={0}
             autoplay={{ delay: 4000, disableOnInteraction: false }}
-            loop={true}
+            loop={true} 
             modules={[Autoplay]}
             className="w-full h-full"
           >
@@ -110,6 +110,8 @@ const AboutUs = () => {
         <div className="bg-slate-100 flex flex-wrap md:flex-nowrap gap-6 py-8 md:py-16 px-4 rounded-3xl justify-center items-center h-full w-full">
           <Image
             src="/meeting.avif"
+            width={800}
+            height={600}
             className="w-full md:w-1/2 rounded-lg"
             alt="Meeting"
           />
@@ -153,6 +155,8 @@ const AboutUs = () => {
           </div>
           <Image
             src="/math-teacher.jpg"
+            width={800}
+            height={600}
             className="w-full md:w-1/2 rounded-3xl"
             alt="Math Teacher"
           />

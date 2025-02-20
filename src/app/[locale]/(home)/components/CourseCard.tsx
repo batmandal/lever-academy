@@ -11,7 +11,7 @@ export const CourseCard = () => {
       className="courseCard max-w-[290px] flex flex-col max-h-[340px] p-3 bg-[#f9f9f9] hover:bg-button cursor-pointer hover:text-white rounded-[28px]"
     >
       <div className="overflow-hidden rounded-2xl">
-        <Image alt="" src="math-teacher.jpg" />
+        <Image alt="Math" width={300} height={200} src="math-teacher.jpg" />
       </div>
       <div className="p-2 flex flex-col gap-1">
         <h4 className="font-bold text-[20px]">

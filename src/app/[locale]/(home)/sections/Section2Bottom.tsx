@@ -40,7 +40,7 @@ export const VisualDemoSection = () => {
                   className={`h-full w-[700px] ${item.bgColor} rounded-3xl flex flex-col justify-between p-10 mr-6`}
                 >
                   <div className="rounded-2xl overflow-hidden h-1/2">
-                    <Image src="/math-teacher.jpg" alt="Visual Demo" />
+                    <Image src="/math-teacher.jpg" width={600} height={500} alt="Visual Demo" />
                   </div>
                   <section>
                     <h4 className="font-bold text-textprimary">{item.title}</h4>
