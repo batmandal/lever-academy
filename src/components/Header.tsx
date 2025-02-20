@@ -2,6 +2,7 @@
 
 import { Link } from "@/i18n/routing";
 import { KeyboardArrowDown } from "@mui/icons-material";
+import { Button } from "@mui/material";
 import { useTranslations } from "next-intl";
 
 import { useEffect, useState } from "react";
@@ -88,25 +89,27 @@ export const Header = () => {
       </div>
       <div className="flex">
         <div className="rounded-l-full bg-[#3f188c] ">
-          <div
+          <Button
+            href="https://lever-ed.framer.website/main?fbclid=IwY2xjawIj8etleHRuA2FlbQIxMQABHchsgYhOJtvNfXHzUnPcd2w01ZDsAVguuoXzEHJmc6zQPMzmzjrohdqUNw_aem_e22uclMJLOj9FmA5P-Eh7Q"
             onClick={handleClick}
             className={`bg-button rounded-l-full px-6 py-4 text-white cursor-pointer ${
               isClicked ? "translate-y-[-3px]" : "translate-y-[-6px]"
             }`}
           >
             {t("signIn")}
-          </div>
+          </Button>
         </div>
         <span className="w-px h-[50%] bg-white"></span>
         <div className="rounded-r-full bg-[#3f188c] ">
-          <div
+          <Button
+            href="https://lever-ed.framer.website/main?fbclid=IwY2xjawIj8etleHRuA2FlbQIxMQABHchsgYhOJtvNfXHzUnPcd2w01ZDsAVguuoXzEHJmc6zQPMzmzjrohdqUNw_aem_e22uclMJLOj9FmA5P-Eh7Q"
             onClick={handleClick1}
             className={`bg-button rounded-r-full px-6 py-4 text-white cursor-pointer ${
               isClickeds ? "translate-y-[-3px]" : "translate-y-[-6px]"
             }`}
           >
             {t("signUp")}
-          </div>
+          </Button>
         </div>
       </div>
     </div>

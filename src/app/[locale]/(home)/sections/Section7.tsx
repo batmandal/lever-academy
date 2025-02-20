@@ -7,7 +7,7 @@ export const Section7 = () => {
   const t = useTranslations("Section7");
   const [isQuestionIndex, setIsQuestionIndex] = useState<number | null>(null);
 
-  // Initialize frequently asked questions here
+  
   const frequentlyQuestions = FrequentlyQuestions();
 
   return (
@@ -20,8 +20,8 @@ export const Section7 = () => {
           <FrequentlyQuestionPart
             onClick={() => setIsQuestionIndex(isQuestionIndex === index ? null : index)}
             key={index}
-            questionNo={items.questionNoKey} // Correct use of key
-            question={items.questionKey} // Correct use of key
+            questionNo={items.questionNoKey} 
+            question={items.questionKey}
             isActive={isQuestionIndex === index}
           />
         ))}

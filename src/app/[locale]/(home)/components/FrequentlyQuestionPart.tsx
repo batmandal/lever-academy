@@ -25,10 +25,9 @@ export const FrequentlyQuestionPart = (props: FrequentlyQuestionPartType) => {
     }
   };
 
-  // Fetch the FrequentlyQuestions array
+
   const frequentlyQuestions = FrequentlyQuestions();
 
-  // Find the answer for the clicked question
   const answer = frequentlyQuestions.find(
     (item) => item.questionNoKey === questionNo
   )?.answerKey;
