@@ -14,9 +14,7 @@ export const CourseCard = () => {
         <Image alt="Math" width={300} height={200} src="math-teacher.jpg" />
       </div>
       <div className="p-2 flex flex-col gap-1">
-        <h4 className="font-bold text-[20px]">
-          Master the fundamentals of Math
-        </h4>
+        <p className="font-bold text-[20px]">Master the fundamentals of Math</p>
         <p
           className={`text-textsecondary  ${
             isHovered ? "text-white" : "text-textsecondary"

@@ -18,7 +18,7 @@ export const VisualDemoSection = () => {
       title: t("cardTwo.tests"),
       text: t("cardTwo.testsText"),
     },
-    { 
+    {
       imgSrc: "/analyz.jpg",
       bgColor: "bg-[#fff2eb]",
       title: t("cardThree.analytics"),
@@ -43,13 +43,23 @@ export const VisualDemoSection = () => {
                   className={`h-full w-[700px] ${item.bgColor} rounded-3xl flex flex-col justify-between p-10 mr-6`}
                 >
                   <div className="rounded-2xl overflow-hidden h-1/2">
-                    <Image src={item.imgSrc} width={600} height={500} alt="Visual Demo" />
+                    <Image
+                      src={item.imgSrc}
+                      width={600}
+                      height={500}
+                      alt="Visual Demo"
+                    />
                   </div>
                   <section>
-                    <h4 className="font-bold text-textprimary">{item.title}</h4>
+                    <p className="font-bold text-textprimary">{item.title}</p>
                     <p className="text-textsecondary">{item.text}</p>
                   </section>
-                  <Button label={t("mainButtontext")} href={"https://lever-ed.framer.website/main?fbclid=IwY2xjawIj8etleHRuA2FlbQIxMQABHchsgYhOJtvNfXHzUnPcd2w01ZDsAVguuoXzEHJmc6zQPMzmzjrohdqUNw_aem_e22uclMJLOj9FmA5P-Eh7Q"} />
+                  <Button
+                    label={t("mainButtontext")}
+                    href={
+                      "https://lever-ed.framer.website/main?fbclid=IwY2xjawIj8etleHRuA2FlbQIxMQABHchsgYhOJtvNfXHzUnPcd2w01ZDsAVguuoXzEHJmc6zQPMzmzjrohdqUNw_aem_e22uclMJLOj9FmA5P-Eh7Q"
+                    }
+                  />
                 </div>
               ))}
             </div>
