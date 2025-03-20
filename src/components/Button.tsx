@@ -18,6 +18,7 @@ export const Button = (props: ButtonType) => {
     }, 100);
   };
   const { label, href, color } = props;
+
   return (
     <div
       onClick={handleClick}

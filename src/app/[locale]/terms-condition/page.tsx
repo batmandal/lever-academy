@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 
 const TermsCondition = () => {
   const t = useTranslations("TermsAndConditions");
-
+  // zasvar
   const termsAndConditions = [
     {
       title: t("termOne.title"),
@@ -38,7 +38,9 @@ const TermsCondition = () => {
           {termsAndConditions.map((item, index) => (
             <div key={index} className="flex flex-col gap-4">
               <h2 className="font-bold text-2xl sm:text-3xl">{item.title}</h2>
-              <p className="text-textsecondary text-base sm:text-lg">{item.text}</p>
+              <p className="text-textsecondary text-base sm:text-lg">
+                {item.text}
+              </p>
 
               {item.note && (
                 <div className="flex flex-col sm:flex-row gap-2 pl-4 sm:pl-8 border-l-4 border-gray-300">
