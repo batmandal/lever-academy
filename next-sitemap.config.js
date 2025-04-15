@@ -1,20 +1,20 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://lever-academy.vercel.app || "http://localhost:3000',
-  generateRobotsTxt: true, //
-  generateIndexSitemap: true, //
+  siteUrl: process.env.SITE_URL || "http://localhost:3000",
+  generateRobotsTxt: true,
+  generateIndexSitemap: true,
   changefreq: "daily",
   priority: 0.7,
   outDir: "public",
   sitemapSize: 5000,
-  exclude: ["/admin/*"],
+  exclude: ["/admin/*", "/404", "/500"],
   alternateRefs: [
     {
-      href: "https://lever-academy.vercel.app/en" || "http://localhost:3000/en",
+      href: "https://lever-academy.vercel.app/en",
       hreflang: "en",
     },
     {
-      href: "https://lever.academy/mn" || "http://localhost:3000/mn",
+      href: "https://lever-academy.vercel.app/mn",
       hreflang: "mn",
     },
   ],

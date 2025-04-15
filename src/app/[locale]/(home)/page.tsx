@@ -1,5 +1,5 @@
 "use client";
-
+export const dynamic = "force-static";
 import {
   Section1,
   // Section2,

@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-
+export const dynamic = "force-static";
 const Features = () => {
   const t = useTranslations("Features");
 

@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-
+export const dynamic = "force-static";
 interface Note {
   title?: string;
   text: string;
@@ -103,7 +103,6 @@ const PrivacyPolicy = () => {
 
   return (
     <main className="flex flex-col items-center px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-      {/* ✅ Heading Section */}
       <section className="w-full max-w-5xl text-center mb-12 sm:mb-16">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-textprimary leading-tight tracking-tight mb-4">
           {t("mainText")}
@@ -113,7 +112,6 @@ const PrivacyPolicy = () => {
         </p>
       </section>
 
-      {/* ✅ Terms Section */}
       <section className="w-full max-w-4xl flex flex-col gap-12 sm:gap-16">
         {termsAndConditions.map((term, index) => (
           <article key={index} className="flex flex-col gap-4 sm:gap-6">
