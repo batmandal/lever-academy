@@ -1,4 +1,5 @@
 "use client";
+
 import { Button } from "@/components";
 import { useTranslations } from "next-intl";
 import { useEffect } from "react";
@@ -7,6 +8,8 @@ import gsap from "gsap";
 import Image from "next/image";
 
 export const Section1 = () => {
+  const t = useTranslations("Section1");
+
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -23,45 +26,58 @@ export const Section1 = () => {
     });
   }, []);
 
-  const t = useTranslations("Section1");
-
   return (
-    <div
+    <section
       id="Section1"
-      className="Section1 LinearBackground flex flex-col text-center pt-20 sm:pt-28 md:pt-32 items-center w-full h-fit"
+      className="LinearBackground flex flex-col items-center w-full px-4 sm:px-8 md:px-16 text-center pt-20 sm:pt-28 md:pt-32"
+      aria-labelledby="hero-heading"
     >
-      <p className="animation text-3xl sm:text-5xl md:text-6xl lg:text-[80px] w-[90%] sm:w-[80%] md:w-[700px] lg:w-[1000px] text-textprimary font-bold leading-tight">
+      <h1
+        id="hero-heading"
+        className="animation text-3xl sm:text-5xl md:text-6xl lg:text-[80px] font-bold leading-tight text-textprimary max-w-screen-xl"
+      >
         {t("maintext")}
-      </p>
+      </h1>
 
-      <p className="animation w-[90%] sm:w-[80%] md:w-[600px] lg:w-[744px] text-base sm:text-lg md:text-xl lg:text-2xl text-textsecondary mt-4">
+      <p className="animation text-base sm:text-lg md:text-xl lg:text-2xl text-textsecondary mt-4 max-w-3xl">
         {t("helpertext")}
       </p>
 
       <div className="animation my-8 sm:my-12">
-        <Button href="https://lever-ed.framer.website/main?fbclid=IwY2xjawIj8etleHRuA2FlbQIxMQABHchsgYhOJtvNfXHzUnPcd2w01ZDsAVguuoXzEHJmc6zQPMzmzjrohdqUNw_aem_e22uclMJLOj9FmA5P-Eh7Q" label={t("mainButtontext")} />
+        <Button
+          href="https://lever-ed.framer.website/main"
+          label={t("mainButtontext")}
+        />
       </div>
 
-      <div className="relative w-full flex flex-col sm:flex-row sm:justify-center items-center h-auto sm:h-60 md:h-72 lg:h-80">
-        <div className="animation absolute bottom-0 z-10 ">
-          <Image alt="iPhone" src="/iphone1.png" width={450} height={600} className="relative w-[700px] sm:w-[600px] md:w-[700px] lg:w-[800px]" />
+      <div className="relative flex flex-col sm:flex-row sm:justify-center items-center w-full h-auto sm:h-60 md:h-72 lg:h-80 gap-4">
+        <div className="animation absolute bottom-0 z-10">
+          <Image
+            alt="iPhone app preview"
+            src="/iphone1.png"
+            width={450}
+            height={600}
+            className="w-[300px] sm:w-[400px] md:w-[500px] lg:w-[700px]"
+            priority
+          />
         </div>
 
         <Image
-          alt="Graphic 1"
-          className="animation relative w-[400px] sm:w-[300px] md:w-[400px] lg:w-[400px]"
+          alt="Platform graphic element 1"
+          className="animation w-[280px] sm:w-[220px] md:w-[300px] lg:w-[450px] relative"
           src="/graphic.avif"
           width={400}
           height={300}
         />
+
         <Image
-          alt="Graphic 2"
-          className="animation relative w-[400px] sm:w-[220px] md:w-[400px] lg:w-[400px]"
+          alt="Platform graphic element 2"
+          className="animation w-[280px] sm:w-[220px] md:w-[300px] lg:w-[450px] relative"
           src="/graphic2.avif"
           width={400}
           height={300}
         />
       </div>
-    </div>
+    </section>
   );
 };

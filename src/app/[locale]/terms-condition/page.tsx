@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 
 const TermsCondition = () => {
   const t = useTranslations("TermsAndConditions");
-  // zasvar
+
   const termsAndConditions = [
     {
       title: t("termOne.title"),
@@ -23,40 +23,40 @@ const TermsCondition = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center">
-      {/* Hero Section */}
-      <section className="w-full h-[40vh] sm:h-[50vh] flex flex-col items-center justify-center px-4 text-center">
-        <h2 className="font-bold text-3xl md:text-4xl">{t("mainText")}</h2>
-        <p className="text-textsecondary text-base md:text-lg mb-10 md:mb-14">
+    <main className="flex flex-col items-center px-4 sm:px-6 lg:px-8 py-16 sm:py-24 ">
+      <section className="w-full max-w-5xl text-center mb-12 sm:mb-16">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-textprimary leading-tight tracking-tight mb-4">
+          {t("mainText")}
+        </h1>
+        <p className="text-textsecondary text-base sm:text-lg max-w-3xl mx-auto">
           {t("helperText")}
         </p>
       </section>
 
-      {/* Terms Section */}
-      <section className="w-full max-w-4xl px-4 sm:px-6 flex flex-col">
-        <div className="flex flex-col gap-10 sm:gap-12">
-          {termsAndConditions.map((item, index) => (
-            <div key={index} className="flex flex-col gap-4">
-              <h2 className="font-bold text-2xl sm:text-3xl">{item.title}</h2>
-              <p className="text-textsecondary text-base sm:text-lg">
-                {item.text}
-              </p>
+      <section className="w-full max-w-4xl flex flex-col gap-12 sm:gap-16">
+        {termsAndConditions.map((item, index) => (
+          <article key={index} className="flex flex-col gap-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-textprimary">
+              {item.title}
+            </h2>
+            <p className="text-textsecondary text-base sm:text-lg leading-relaxed">
+              {item.text}
+            </p>
 
-              {item.note && (
-                <div className="flex flex-col sm:flex-row gap-2 pl-4 sm:pl-8 border-l-4 border-gray-300">
-                  <h3 className="font-semibold text-base sm:text-lg">
-                    {item.note.noteTitle}
-                  </h3>
-                  <p className="text-textsecondary text-base sm:text-lg">
-                    {item.note.noteText}
-                  </p>
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
+            {item.note && (
+              <div className="bg-slate-50 border-l-4 border-button pl-4 pr-2 py-3 rounded-md">
+                <h3 className="font-semibold text-base sm:text-lg text-textprimary mb-1">
+                  {item.note.noteTitle}
+                </h3>
+                <p className="text-textsecondary text-sm sm:text-base leading-relaxed">
+                  {item.note.noteText}
+                </p>
+              </div>
+            )}
+          </article>
+        ))}
       </section>
-    </div>
+    </main>
   );
 };
 

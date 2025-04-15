@@ -1,11 +1,10 @@
 "use client";
 
-import { Link } from "@/i18n/routing";
-import { KeyboardArrowDown } from "@mui/icons-material";
+import { useEffect, useState } from "react";
+import { KeyboardArrowDown, MenuOutlined } from "@mui/icons-material";
 import { Button } from "@mui/material";
 import { useTranslations } from "next-intl";
-
-import { useEffect, useState } from "react";
+import { Link } from "@/i18n/routing";
 
 export const Header = () => {
   const [showHeader, setShowHeader] = useState(true);
@@ -14,105 +13,118 @@ export const Header = () => {
   const [isClickeds, setIsClickeds] = useState(false);
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
 
-  const showDropdown = () => setIsDropdownVisible(true);
-  const hideDropdown = () => setIsDropdownVisible(false);
-
-  const handleClick = () => {
-    setIsClicked(true);
-    setTimeout(() => {
-      setIsClicked(false);
-    }, 100);
-  };
-  const handleClick1 = () => {
-    setIsClickeds(true);
-    setTimeout(() => {
-      setIsClickeds(false);
-    }, 100);
-  };
+  const t = useTranslations("Header");
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-
-      if (currentScrollY > lastScrollY && currentScrollY > 50) {
-        setShowHeader(false);
-      } else {
-        setShowHeader(true);
-      }
+      setShowHeader(currentScrollY < lastScrollY || currentScrollY < 50);
       setLastScrollY(currentScrollY);
     };
-
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
-  const t = useTranslations("Header");
-
+  const handleClick = () => {
+    setIsClicked(true);
+    setTimeout(() => setIsClicked(false), 100);
+  };
+  const handleClick1 = () => {
+    setIsClickeds(true);
+    setTimeout(() => setIsClickeds(false), 100);
+  };
 
   return (
-    <div
-      className={`header w-screen flex items-center justify-between h-24 z-10
-     px-32 fixed transition-transform duration-500 ${
-       showHeader ? "translate-y-0 " : "-translate-y-full "
-     } ${lastScrollY === 0 ? "bg-transparent" : "bg-white shadow-md"}
-     `}
+    <header
+      className={`fixed top-0 left-0 z-50 w-full h-24 transition-transform duration-500 ${
+        showHeader ? "translate-y-0" : "-translate-y-full"
+      } ${lastScrollY === 0 ? "bg-transparent" : "bg-white shadow-md"}`}
     >
-      {/* <img src="/logo.png" alt="png" className="h-7" /> */}
-      <Link href='/' className="text-4xl font-bold text-textprimary transition ease-in-out cursor-pointer hover:text-textsecondary">LEVER</Link>
+      <div className="max-w-screen-xl mx-auto w-full px-4 sm:px-6 md:px-8 lg:px-12 h-full flex items-center justify-between">
+        <Link
+          href="/"
+          className="text-xl sm:text-2xl md:text-3xl font-bold text-textprimary hover:text-textsecondary transition"
+          aria-label="LEVER homepage"
+        >
+          LEVER
+        </Link>
+        <div className="md:hidden">
+          <MenuOutlined />
+        </div>
 
-      <div className="flex gap-5 text-textsecondary">
-        <Link href="/">{t("home")}</Link>
-        <Link href="#Section7">{t("fuckU")}</Link>
-        <div className="flex flex-col cursor-pointer transition ease-in-out">
-          <p onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
-            {t("pages")} <KeyboardArrowDown />
-          </p>
+        <nav
+          className="hidden md:flex items-center gap-4 sm:gap-5 md:gap-6 text-textsecondary text-sm lg:text-base relative"
+          aria-label="Main navigation"
+        >
+          <Link href="/">{t("home")}</Link>
+          <Link href="#Section7">{t("fuckU")}</Link>
 
-          {isDropdownVisible && (
-            <div
-              onMouseEnter={showDropdown}
-              onMouseLeave={hideDropdown}
-              className="bg-transparent h-auto absolute left-[45%] top-14  p-4"
-            >
-              <div className="w-full h-full flex flex-col bg-white rounded-3xl shadow-xl p-3">
-                <Link className="transition ease-in-out text-lg hover:text-textprimary " href="/terms-condition">{t("terms")}</Link>
-                <Link className="transition ease-in-out text-lg hover:text-textprimary " href="/about-us">{t("about")}</Link>
-                <Link className="transition ease-in-out text-lg hover:text-textprimary " href="/features">{t("features")}</Link>
-                <Link className="transition ease-in-out text-lg hover:text-textprimary " href="/contact-us">{t("contact")}</Link>
+          <div
+            className="relative"
+            onMouseEnter={() => setIsDropdownVisible(true)}
+            onMouseLeave={() => setIsDropdownVisible(false)}
+          >
+            <button className="flex items-center gap-1 focus:outline-none">
+              {t("pages")} <KeyboardArrowDown fontSize="small" />
+            </button>
+
+            {isDropdownVisible && (
+              <div className="absolute left-0 top-full mt-0 pt-2 bg-white shadow-xl rounded-xl p-3 min-w-[160px] z-40">
+                <Link
+                  href="/terms-condition"
+                  className="block py-1 hover:text-textprimary"
+                >
+                  {t("terms")}
+                </Link>
+                <Link
+                  href="/about-us"
+                  className="block py-1 hover:text-textprimary"
+                >
+                  {t("about")}
+                </Link>
+                <Link
+                  href="/features"
+                  className="block py-1 hover:text-textprimary"
+                >
+                  {t("features")}
+                </Link>
+                <Link
+                  href="/contact-us"
+                  className="block py-1 hover:text-textprimary"
+                >
+                  {t("contact")}
+                </Link>
               </div>
-            </div>
-          )}
+            )}
+          </div>
+        </nav>
+
+        <div className="hidden md:flex items-center">
+          <div className="rounded-l-full bg-[#3f188c]">
+            <Button
+              href="https://lever-ed.framer.website/main"
+              onClick={handleClick}
+              className={`bg-button rounded-l-full px-4 md:px-6 py-2 md:py-4 text-white ${
+                isClicked ? "translate-y-[-3px]" : "translate-y-[-6px]"
+              } transition-transform`}
+            >
+              {t("signIn")}
+            </Button>
+          </div>
+          <span className="w-px h-10 bg-white" />
+          <div className="rounded-r-full bg-[#3f188c]">
+            <Button
+              href="https://lever-ed.framer.website/main"
+              onClick={handleClick1}
+              className={`bg-button rounded-r-full px-4 md:px-6 py-2 md:py-4 text-white ${
+                isClickeds ? "translate-y-[-3px]" : "translate-y-[-6px]"
+              } transition-transform`}
+            >
+              {t("signUp")}
+            </Button>
+          </div>
         </div>
       </div>
-      <div className="flex">
-        <div className="rounded-l-full bg-[#3f188c] ">
-          <Button
-            href="https://lever-ed.framer.website/main?fbclid=IwY2xjawIj8etleHRuA2FlbQIxMQABHchsgYhOJtvNfXHzUnPcd2w01ZDsAVguuoXzEHJmc6zQPMzmzjrohdqUNw_aem_e22uclMJLOj9FmA5P-Eh7Q"
-            onClick={handleClick}
-            className={`bg-button rounded-l-full px-6 py-4 text-white cursor-pointer ${
-              isClicked ? "translate-y-[-3px]" : "translate-y-[-6px]"
-            }`}
-          >
-            {t("signIn")}
-          </Button>
-        </div>
-        <span className="w-px h-[50%] bg-white"></span>
-        <div className="rounded-r-full bg-[#3f188c] ">
-          <Button
-            href="https://lever-ed.framer.website/main?fbclid=IwY2xjawIj8etleHRuA2FlbQIxMQABHchsgYhOJtvNfXHzUnPcd2w01ZDsAVguuoXzEHJmc6zQPMzmzjrohdqUNw_aem_e22uclMJLOj9FmA5P-Eh7Q"
-            onClick={handleClick1}
-            className={`bg-button rounded-r-full px-6 py-4 text-white cursor-pointer ${
-              isClickeds ? "translate-y-[-3px]" : "translate-y-[-6px]"
-            }`}
-          >
-            {t("signUp")}
-          </Button>
-        </div>
-      </div>
-    </div>
-    
+    </header>
   );
 };

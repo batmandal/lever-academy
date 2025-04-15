@@ -25,7 +25,7 @@ export const SpecialButton = () => {
   };
 
   return (
-    <div className="flex flex-col gap-5 ">
+    <div className="flex flex-col gap-5 z-50">
       <div
         onClick={handleOpen}
         className="w-12 h-12 shadow-2xl  rounded-full bg-textprimary  cursor-pointer p-3"

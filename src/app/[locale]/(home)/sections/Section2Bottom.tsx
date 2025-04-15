@@ -33,7 +33,41 @@ export const VisualDemoSection = () => {
           {t("title")}
         </h2>
       </div>
-      <div className="w-full overflow-hidden h-[85vh]">
+      <div className="w-full overflow-x-auto sm:hidden">
+        <div className="flex gap-6 px-4 sm:px-6 lg:px-0 w-fit">
+          {ItemsJson.map((item, index) => (
+            <div
+              key={index}
+              className={`min-w-[300px] sm:min-w-[400px] md:min-w-[500px] lg:min-w-[650px] xl:min-w-[700px] h-[500px] ${item.bgColor} rounded-3xl flex flex-col justify-between p-6 sm:p-8`}
+            >
+              <div className="rounded-2xl overflow-hidden h-1/2 mb-4">
+                <Image
+                  src={item.imgSrc}
+                  width={600}
+                  height={400}
+                  alt={item.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <p className="font-bold text-xl sm:text-2xl text-textprimary mb-2">
+                  {item.title}
+                </p>
+                <p className="text-textsecondary text-sm sm:text-base">
+                  {item.text}
+                </p>
+              </div>
+              <div className="mt-4">
+                <Button
+                  label={t("mainButtontext")}
+                  href="https://lever-ed.framer.website/main"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="w-full overflow-hidden h-[85vh] hidden sm:block">
         <div className="w-fit flex h-full">
           {[...Array(2)].map((_, idx) => (
             <div key={idx} className="carousel h-full w-fit flex">
@@ -42,12 +76,13 @@ export const VisualDemoSection = () => {
                   key={index}
                   className={`h-full w-[700px] ${item.bgColor} rounded-3xl flex flex-col justify-between p-10 mr-6`}
                 >
-                  <div className="rounded-2xl overflow-hidden h-1/2">
+                  <div className="rounded-2xl overflow-hidden h-1/2 ">
                     <Image
                       src={item.imgSrc}
                       width={600}
                       height={500}
                       alt="Visual Demo"
+                      className="object-cover w-full"
                     />
                   </div>
                   <section>

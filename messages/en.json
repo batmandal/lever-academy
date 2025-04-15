@@ -11,9 +11,9 @@
     "fuckU": "FAQ",
     "pages": "Pages",
     "about": "About Us",
-    "terms":"Tems and conditions",
-    "features":"Features",
-    "contact":"Contact us",
+    "terms": "Tems and conditions",
+    "features": "Features",
+    "contact": "Contact us",
     "signIn": "Sign In",
     "signUp": "Sign Up"
   },
@@ -31,8 +31,8 @@
     "404Page": "404"
   },
 
-  "Section1Bottom":{
-    "WhyChoose":"Why Choose Our Platform",
+  "Section1Bottom": {
+    "WhyChoose": "Why Choose Our Platform",
     "adaptive_testing": {
       "title": "Adaptive Testing:",
       "text": "Our AI identifies gaps and creates questions to target specific weaknesses."
@@ -49,7 +49,7 @@
       "title": "Global Connectivity:",
       "text": "Teachers from different institutions, schools, and countries can easily connect with their students."
     }
-   },
+  },
 
   "Section2": {
     "maintext": " All the skills you need in one place",
@@ -58,7 +58,7 @@
 
   "Section2Bottom": {
     "title": "Courses, tests, and analytics",
-    "mainButtontext":"Get Started Free",
+    "mainButtontext": "Get Started Free",
     "cardOne": {
       "courses": "Courses",
       "coursesText": "Our team has updated and uploaded the most effective lessons to help you learn and improve your IELTS skills, guiding you toward achieving your desired score."
@@ -67,11 +67,10 @@
       "tests": "Tests",
       "testsText": "We have developed AI-generated practice tests, offering a limitless amount of tests for students preparing for the Entrance Examination."
     },
-    "cardThree":{
+    "cardThree": {
       "analytics": "Analytics",
       "analyticsText": " Our unique advantage lies in the AI&apos;s ability to analyze each student&apos;s strengths and weaknesses, creating personalized tests designed to target and improve their weaker areas."
     }
-   
   },
 
   "Section3": {
@@ -125,7 +124,6 @@
     }
   },
 
-
   "AboutUs": {
     "mainText": "All The Skills You Need In One Place",
     "helpertext": "Master Every Skill with Ease",
@@ -134,6 +132,8 @@
     "cardsub": "Growth-accelerating products for students, educators, and more.",
     "mainButtontext": "Get Started Free",
     "visionAndMission": "Our Mission And Vision",
+    "testimonials": "What Others Are Saying",
+    "testimonialsSub": "Growth-accelerating products for students, educators, and more.",
     "Courses": {
       "title": "Courses",
       "text": "Our team has updated and uploaded the most effective lessons to help you learn and improve your IELTS skills, guiding you toward achieving your desired score."
@@ -161,6 +161,15 @@
     }
   },
 
+  "ContactUs": {
+    "title": "Love To Hear From You",
+    "subtitle": "Get In Touch Anytime",
+    "namePlaceholder": "Full Name",
+    "emailPlaceholder": "Email",
+    "messagePlaceholder": "Your Message",
+    "submit": "Send Message"
+  },
+
   "Features": {
     "mainText": "Key Features Overview of Lever",
     "helperText": "Smart Testing for Smarter Learning",
@@ -180,11 +189,11 @@
       "title": "4. Progress Tracking",
       "text": "Lever helps students track their learning journey with detailed reports, personalized feedback, and customized study plans, all designed to meet their academic goals."
     },
-    "featureFive":{
+    "featureFive": {
       "title": "5. Global Connectivity",
-      "text": "Teachers from various schools, institutions, and countries can easily connect with their students, fostering international collaboration and diverse educational perspectives."  
+      "text": "Teachers from various schools, institutions, and countries can easily connect with their students, fostering international collaboration and diverse educational perspectives."
     },
-    "featureSix":{
+    "featureSix": {
       "title": "6. Unified Exam Database",
       "text": "Lever offers a comprehensive database of all possible exams, making it easy for students to access, prepare, and organize their exam materials in one place."
     },
@@ -210,7 +219,7 @@
     }
   },
 
-  "TermsAndConditions": { 
+  "TermsAndConditions": {
     "mainText": "Terms and condition for service",
     "helperText": "Please note that these Terms and Conditions of Service were last revised in January _____, 2025.",
     "termOne": {
@@ -218,15 +227,14 @@
       "text": "Lever’s web application and related services (collectively referred to as the “Service”) are operated by Lever, Inc. (“Lever,” “us,” or “we”). Access to and use of the Service are subject to the following Terms and Conditions of Service (“Terms and Conditions”). By accessing or using any part of the Service, you confirm that you have read, understood, and agree to be bound by these Terms and Conditions, including any future updates. Lever may revise, update, or modify these Terms and Conditions at its discretion.If such changes occur, we will post a notice on the web application for at least 7 days after the changes are made and indicate at the bottom of these Terms and Conditions the date they were last updated. Any revisions will become effective either (i) at the end of the 7-day notification period or (ii) the first time you access or use the Service after the changes, whichever comes first. If you do not agree to comply with these Terms and Conditions, you are not authorized to use or access the Service.",
       "note": {
         "noteTitle": "PLEASE NOTE:",
-        "noteText":
-          "These Terms and Conditions include a mandatory arbitration clause for dispute resolution under certain circumstances. This means disputes will be resolved individually through arbitration, not via jury trials or class action lawsuits."
+        "noteText": "These Terms and Conditions include a mandatory arbitration clause for dispute resolution under certain circumstances. This means disputes will be resolved individually through arbitration, not via jury trials or class action lawsuits."
       }
     },
-    "termTwo":{
+    "termTwo": {
       "title": "2. Description of Website and Service",
       "text": "The Service allows users to access and use a variety of educational services, including learning or practicing a language. Lever may, in its sole discretion and at any time, update, change, suspend, make improvements to or discontinue any aspect of the Service, temporarily or permanently."
     },
-    "termThree":{
+    "termThree": {
       "title": "3. Acceptable Use of the Services",
       "text": "You are responsible for your use of the Services, and for any use of the Services made using your account. Our goal is to create a positive, useful, and safe user experience. To promote this goal, we prohibit certain kinds of conduct that may be harmful to other users or to us. When you use the Services, you must comply with our Community Guidelines."
     },
@@ -238,24 +246,23 @@
       "title": "5. Registration",
       "text": "In connection with registering for and using the Service, you agree (i) to provide accurate, current and complete information about you and/or your organization as requested by Lever; (ii) to maintain the confidentiality of your password and other information related to the security of your account; (iii) to maintain and promptly update any registration information you provide to Lever, to keep such information accurate, current and complete; and (iv) to be fully responsible for all use of your account and for any actions that take place through your account."
     },
-    "termSix":{
+    "termSix": {
       "title": "6. Submission of Content",
       "text": "As a condition of submitting any ratings, reviews, information, data, text, photographs, audio clips, audiovisual works, translations, flashcards, or other materials on the Service (collectively, “Content”), you hereby grant to Lever a full-paid, royalty free, perpetual, irrevocable, worldwide, nonexclusive, transferable, and sublicensable license to use, reproduce, copy, adapt, modify, merge, distribute, publicly display, and create derivative works from the Content; incorporate the Content into other works; and sublicense through multiple tiers the Content. You acknowledge that this license cannot be terminated by you once your Content is submitted to the Service. You represent that you own or have secured all legal rights necessary for the Content submitted by you to be used by you, Lever, and others as described and otherwise contemplated in these Terms and Conditions. You understand that other users will have access to the Content and that neither they or Lever have any obligation to you or anyone else to maintain the confidentiality of the Content. You will not upload, display, or otherwise provide on or through the Service any Content that: (i) is libelous, defamatory, abusive, threatening, harassing, hateful, offensive, or otherwise violates any law or infringes upon the right of any third party (including copyright, trademark, privacy, publicity, or other personal or proprietary rights); (ii) in Lever’s sole judgment, is objectionable, restricts or inhibits any other person from using the Service, or may expose Lever or its users to any harm or liability of any kind; or (iii) violates Lever’s Community Guidelines."
     },
-    "termSeven":{
+    "termSeven": {
       "title": "7. Payment Processors",
       "text": "All financial transactions made in connection with the Service will be processed by a third party in accordance with their respective terms of use, privacy policy, and/or any applicable payment terms and conditions. We encourage you to learn about the practices of such third party. In no event will Lever be responsible for the actions or inactions of any third party payment processor, including, but not limited to, system downtime or payment service outages."
     },
-    "termEight":{
+    "termEight": {
       "title": "8. Refund Policy",
       "text": "All payments are nonrefundable. There are no refunds or credits for Virtual Items or partially used membership periods. However, Lever may grant refunds or credits on a case-by-case basis at our sole discretion. Lever’s grant of a refund or credit in one instance does not obligate Lever to provide a refund or credit in the future, under any circumstances. If you cancel your periodic subscription to a paid Lever service, you will continue to have access to the service through the end of your current billing period."
     },
-    "termNine":{
+    "termNine": {
       "title": "9. Miscellaneous",
       "text": "These Terms and Conditions constitute the entire agreement between Lever and you concerning the subject matter hereof. In the event that any of the Terms and Conditions are held by a court or other tribunal of competent jurisdiction to be unenforceable, such provisions shall  be limited or eliminated to the minimum extent necessary so that these Terms and Conditions shall otherwise remain in full force and effect. A waiver by Lever or you of any provision of these Terms and Conditions or any breach thereof, in any one instance, will not waive such term or condition or any subsequent breach thereof. Lever may assign its rights or obligations under these Terms and Conditions without condition. These Terms and Conditions will be binding upon and will insure to the benefit of Lever and you, and Lever's and your respective successors and permitted assigns. Lever Education (we, our, or us) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our AI-based education platform (the Website). Please read this policy carefully to understand our practices regarding your personal information and how we will treat it."
     }
   },
-
 
   "PrivacyPolicy": {
     "mainText": "Privacy policy",
@@ -265,76 +272,62 @@
       "text": "We collect the following types of information",
       "note": {
         "noteTitle": "Personal Information:",
-        "noteText":
-          "Information that identifies you, such as your name, email address, phone number, and any other information you voluntarily provide to us."
+        "noteText": "Information that identifies you, such as your name, email address, phone number, and any other information you voluntarily provide to us."
       },
       "note2": {
         "noteTitle": "Account Information:",
-        "noteText":
-          "Details such as your username, password, and preferences."
+        "noteText": "Details such as your username, password, and preferences."
       },
       "note3": {
         "noteTitle": "Usage Data:",
-        "noteText":
-          "information about your interaction with the Website, including pages visited, time spent on the Website, and the features used."
+        "noteText": "information about your interaction with the Website, including pages visited, time spent on the Website, and the features used."
       },
       "note4": {
         "noteTitle": "Device Information:",
-        "noteText":
-          "Data about the device you use to access the Website, such as IP address, browser type, operating system, and device identifiers."
+        "noteText": "Data about the device you use to access the Website, such as IP address, browser type, operating system, and device identifiers."
       },
       "note5": {
         "noteTitle": "AI Input and Output Data:",
-        "noteText":
-          "Any information you submit for processing through our AI tools and the resulting outputs."
+        "noteText": "Any information you submit for processing through our AI tools and the resulting outputs."
       }
     },
     "policyTwo": {
       "title": "2. How We Use Your Information",
       "text": "We use the information we collect to:",
       "note": {
-        "noteText":
-          "Provide, operate, and improve our Website and services."
+        "noteText": "Provide, operate, and improve our Website and services."
       },
       "note2": {
-        "noteText":
-          "Personalize your experience on the Website."
+        "noteText": "Personalize your experience on the Website."
       },
       "note3": {
-        "noteText":
-          "Respond to your inquiries and provide customer support."
+        "noteText": "Respond to your inquiries and provide customer support."
       },
       "note4": {
-        "noteText":
-          "Analyze usage patterns to improve functionality and user experience."
+        "noteText": "Analyze usage patterns to improve functionality and user experience."
       },
       "note5": {
-        "noteText":
-          "Communicate with you about updates, promotions, and other information related to our services."
+        "noteText": "Communicate with you about updates, promotions, and other information related to our services."
       },
       "note6": {
         "noteTitle": "",
-        "noteText":
-          "Comply with legal obligations and enforce our terms of service."
+        "noteText": "Comply with legal obligations and enforce our terms of service."
       }
     },
-    "policyThree":  {
+    "policyThree": {
       "title": "3. How We Share Your Information",
       "text": "We do not sell your personal information. However, we may share your information in the following circumstances:",
       "note": {
         "noteTitle": "Service Providers:",
-        "noteText":
-          " With third-party vendors and service providers who assist us in operating the Website and providing services to you ."
+        "noteText": " With third-party vendors and service providers who assist us in operating the Website and providing services to you ."
       },
       "note2": {
         "noteTitle": "Legal Requirements:",
-        "noteText":
-          "If required by law or to protect the rights, property, or safety of Lever Education, our users, or others."
+        "noteText": "If required by law or to protect the rights, property, or safety of Lever Education, our users, or others."
       },
       "note3": {
         "noteTitle": "Business Transfers:",
-        "noteText":
-          "In connection with a merger, sale of assets, financing, or acquisition of all or part of our business."
+        "noteText": "In connection with a merger, sale of assets, financing, or acquisition of all or part of our business."
       }
     },
     "policyFour": {
@@ -346,23 +339,19 @@
       "text": "Depending on your location, you may have the following rights regarding your personal information:",
       "note": {
         "noteTitle": "Access and Correction:",
-        "noteText":
-          "Request access to the personal information we hold about you and correct any inaccuracies."
+        "noteText": "Request access to the personal information we hold about you and correct any inaccuracies."
       },
       "note2": {
         "noteTitle": "Data Deletion:",
-        "noteText":
-          "Request the deletion of your personal information, subject to applicable legal requirements."
+        "noteText": "Request the deletion of your personal information, subject to applicable legal requirements."
       },
       "note3": {
         "noteTitle": "Opt-Out:",
-        "noteText":
-          "Opt out of receiving promotional communications from us."
+        "noteText": "Opt out of receiving promotional communications from us."
       },
       "note4": {
         "noteTitle": "Restrict Processing:",
-        "noteText":
-          "Limit the ways we use your personal information in certain circumstances. (To exercise your rights, please contact us at [Insert Contact Email].)"
+        "noteText": "Limit the ways we use your personal information in certain circumstances. (To exercise your rights, please contact us at [Insert Contact Email].)"
       }
     },
     "policySix": {
@@ -387,5 +376,3 @@
     }
   }
 }
-
-

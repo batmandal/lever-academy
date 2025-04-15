@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 const Features = () => {
   const t = useTranslations("Features");
 
-  const Features = [
+  const featuresList = [
     { title: t("featureOne.title"), text: t("featureOne.text") },
     { title: t("featureTwo.title"), text: t("featureTwo.text") },
     { title: t("featureThree.title"), text: t("featureThree.text") },
@@ -18,25 +18,30 @@ const Features = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center px-4 sm:px-6 lg:px-8">
-      <section className="w-full max-w-5xl h-[40vh] sm:h-[50vh] flex flex-col items-center justify-center text-center">
-        <h2 className="font-bold text-3xl sm:text-4xl lg:text-5xl">{t("mainText")}</h2>
-        <p className="text-textsecondary mb-10 sm:mb-14 text-base sm:text-lg max-w-3xl">
+    <div className="flex flex-col items-center px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+      <section className="w-full max-w-5xl text-center mb-12 sm:mb-16">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-textprimary leading-tight tracking-tight mb-4">
+          {t("mainText")}
+        </h1>
+        <p className="text-textsecondary text-base sm:text-lg max-w-3xl mx-auto">
           {t("helperText")}
         </p>
       </section>
 
-      <section className="w-full max-w-4xl">
-        <div className="flex flex-col gap-10 sm:gap-12">
-          {Features.map((item, index) => (
-            <div key={index} className="flex flex-col gap-3 sm:gap-4">
-              <h2 className="font-bold text-2xl sm:text-3xl lg:text-4xl">{item.title}</h2>
-              <p className="text-textsecondary text-sm sm:text-base lg:text-lg leading-relaxed">
-                {item.text}
-              </p>
-            </div>
-          ))}
-        </div>
+      <section className="w-full max-w-4xl flex flex-col gap-10 sm:gap-12">
+        {featuresList.map((item, index) => (
+          <article
+            key={index}
+            className="flex flex-col gap-3 sm:gap-4 text-start sm:text-left"
+          >
+            <h2 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-textprimary">
+              {item.title}
+            </h2>
+            <p className="text-textsecondary text-sm sm:text-base lg:text-lg leading-relaxed">
+              {item.text}
+            </p>
+          </article>
+        ))}
       </section>
     </div>
   );
