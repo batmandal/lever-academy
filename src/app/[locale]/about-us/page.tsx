@@ -32,7 +32,6 @@ const AboutUs = () => {
 
   return (
     <div className="flex flex-col gap-y-16">
-      {/* Hero */}
       <section className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-[#E8F0FF] to-[#FFF8E5] px-4 md:px-16 gap-y-6 md:gap-y-8 text-center">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-textprimary leading-tight tracking-tight max-w-4xl">
           <br />
