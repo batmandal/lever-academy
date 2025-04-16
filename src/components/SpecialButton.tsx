@@ -1,6 +1,6 @@
 "use client";
 
-import { LanguageIcon, SearchIcon } from "@/assets/svg"; // import { usePathname } from "@/i18n/routing";
+import { LanguageIcon, SearchIcon } from "@/assets/svg";
 import { Modal } from "@mui/material";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";

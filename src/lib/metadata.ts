@@ -12,38 +12,40 @@ export async function generatePageMetadata({
 }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace });
 
-  const title = t("title");
-  const description = t("description");
+  const title = t("meta.title");
+  const description = t("meta.description");
 
   return {
     title,
     description,
+    // icons: {
+    //   icon: "/favicon.ico",
+    // },
     openGraph: {
       title,
       description,
       url: `https://lever-academy.vercel.app/${locale}${path}`,
       siteName: "Lever Academy",
+      locale,
+      type: "website",
       images: [
         {
-          url: `https://lever-academy.vercel.app/og-${
-            path.replace(/\//g, "") || "home"
-          }.jpg`,
+          url: `https://lever-academy.vercel.app/og-${path.replace(
+            /\//g,
+            ""
+          )}.jpg`,
           width: 1200,
           height: 630,
           alt: `Lever Academy ${namespace}`,
         },
       ],
-      locale,
-      type: "website",
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
       images: [
-        `https://lever-academy.vercel.app/og-${
-          path.replace(/\//g, "") || "home"
-        }.jpg`,
+        `https://lever-academy.vercel.app/og-${path.replace(/\//g, "")}.jpg`,
       ],
     },
   };

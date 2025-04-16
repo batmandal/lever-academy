@@ -13,7 +13,7 @@
     "about": "Бидний тухай",
     "terms": "Нөхцөлүүд",
     "features": "Онцлогууд",
-    "contact": "Холбогдох",
+    "contact": "Холбоо барих",
     "signIn": "Нэвтрэх",
     "signUp": "Бүртгүүлэх"
   },
@@ -21,7 +21,7 @@
   "Footer": {
     "text": "Оюутан бүрийн хэрэгцээнд тохирсон дасан зохицох чадвартай, хиймэл оюун ухаантай үнэлгээний тусламжтайгаар боловсролыг хувьсгах. Илүү ухаалаг суралцах ухаалаг тест",
     "home": "Нүүр",
-    "contact": "Холбогдох",
+    "contact": "Холбоо барих",
     "features": "Онцлогууд",
     "about": "Бидний тухай",
     "terms": "Нөхцөлүүд",
@@ -162,6 +162,10 @@
   },
 
   "ContactUs": {
+    "meta": {
+      "title": "Холбоо барих | Lever Academy",
+      "description": "Асуулт, тусламж эсвэл хамтын ажиллагааны талаар бидэнтэй холбогдоорой."
+    },
     "title": "Холбогдоход таатай байна",
     "subtitle": "Бидэнтэй хүссэн үедээ холбогдоорой",
     "namePlaceholder": "Бүтэн нэр",
@@ -171,6 +175,10 @@
   },
 
   "Features": {
+    "meta": {
+      "title": "Онцлогууд | Lever Academy",
+      "description": "Таны сургалтыг дэмжих хүчирхэг боломжуудтай танилцаарай."
+    },
     "mainText": "Онцлог Шинж Чанарууд",
     "helperText": "Ухаалаг Шалгалт – Ухаалаг Суралцах",
     "featureOne": {
@@ -220,6 +228,10 @@
   },
 
   "TermsAndConditions": {
+    "meta": {
+      "title": "Нөхцөл ба болзол | Lever Academy",
+      "description": "Манай платформын ашиглах нөхцөл, дүрмийг эндээс уншина уу."
+    },
     "mainText": "Үйлчилгээний нөхцөл",
     "helperText": "Please note that these Terms and Conditions of Service were last revised in January _____, 2025.",
     "termOne": {
@@ -265,6 +277,10 @@
   },
 
   "PrivacyPolicy": {
+    "meta": {
+      "title": "Нууцлалын бодлого | Lever Academy",
+      "description": "Таны мэдээллийг хэрхэн цуглуулж, ашиглаж, хамгаалж байгааг мэдэж аваарай."
+    },
     "mainText": "Нууцлалын бодлого",
     "helperText": "Please note that these privacy policy of Service were last revised in January _____, 2025.",
     "policyOne": {

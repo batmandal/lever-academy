@@ -166,6 +166,10 @@
   },
 
   "ContactUs": {
+    "meta": {
+      "title": "Contact Us | Lever Academy",
+      "description": "Get in touch with us for inquiries, support, or partnership opportunities."
+    },
     "title": "Love To Hear From You",
     "subtitle": "Get In Touch Anytime",
     "namePlaceholder": "Full Name",
@@ -175,6 +179,11 @@
   },
 
   "Features": {
+    "meta": {
+      "title": "Features | Lever Academy",
+      "description": "Discover powerful features built to enhance your learning experience."
+    },
+
     "mainText": "Key Features Overview of Lever",
     "helperText": "Smart Testing for Smarter Learning",
     "featureOne": {
@@ -224,6 +233,10 @@
   },
 
   "TermsAndConditions": {
+    "meta": {
+      "title": "Terms & Conditions | Lever Academy",
+      "description": "Review the terms and conditions for using Lever Academy's services and content."
+    },
     "mainText": "Terms and condition for service",
     "helperText": "Please note that these Terms and Conditions of Service were last revised in January _____, 2025.",
     "termOne": {
@@ -269,6 +282,10 @@
   },
 
   "PrivacyPolicy": {
+    "meta": {
+      "title": "Privacy Policy | Lever Academy",
+      "description": "Learn how Lever Academy collects, uses, and protects your personal information."
+    },
     "mainText": "Privacy policy",
     "helperText": "Please note that these privacy policy of Service were last revised in January _____, 2025.",
     "policyOne": {
