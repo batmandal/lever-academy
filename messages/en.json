@@ -125,6 +125,10 @@
   },
 
   "AboutUs": {
+    "meta": {
+      "title": "About Us - Lever Academy",
+      "description": "Explore our mission, courses, and AI-powered analytics to transform education for students and teachers alike."
+    },
     "mainText": "All The Skills You Need In One Place",
     "helpertext": "Master Every Skill with Ease",
     "coursesTests": "Courses, Tests, and Analytics",

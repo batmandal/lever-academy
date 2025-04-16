@@ -33,7 +33,7 @@ export const VisualDemoSection = () => {
           {t("title")}
         </h2>
       </div>
-      <div className="w-full overflow-x-auto sm:hidden">
+      <div className="w-full overflow-x-auto md:hidden">
         <div className="flex gap-6 px-4 sm:px-6 lg:px-0 w-fit">
           {ItemsJson.map((item, index) => (
             <div
@@ -67,7 +67,7 @@ export const VisualDemoSection = () => {
           ))}
         </div>
       </div>
-      <div className="w-full overflow-hidden h-[85vh] hidden sm:block">
+      <div className="w-full overflow-hidden h-[85vh] hidden md:block">
         <div className="w-fit flex h-full">
           {[...Array(2)].map((_, idx) => (
             <div key={idx} className="carousel h-full w-fit flex">

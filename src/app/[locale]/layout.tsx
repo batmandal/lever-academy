@@ -48,7 +48,7 @@ export default async function RootLayout({
       >
         <NextIntlClientProvider messages={messages}>
           <Header />
-          <div className="fixed left-[30px] bottom-[20%] z-50">
+          <div className="fixed left-[30px] bottom-[30px] z-50">
             <SpecialButton />
           </div>
           {children}
