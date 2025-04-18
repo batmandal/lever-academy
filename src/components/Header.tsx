@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { KeyboardArrowDown, MenuOutlined } from "@mui/icons-material";
-import { Button } from "@mui/material";
+// import { Button } from "@mui/material";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 
@@ -101,7 +101,7 @@ export const Header = () => {
 
         <div className="hidden md:flex items-center">
           <div className="rounded-l-full bg-[#3f188c]">
-            <Button
+            {/* <Button
               href="https://lever-ed.framer.website/main"
               onClick={handleClick}
               className={`bg-button rounded-l-full px-4 md:px-6 py-2 md:py-4 text-white ${
@@ -109,11 +109,22 @@ export const Header = () => {
               } transition-transform`}
             >
               {t("signIn")}
-            </Button>
+            </Button> */}
+            <Link
+              href="https://lever-ed.framer.website/main"
+              onClick={() => {
+                handleClick();
+              }}
+              className={`bg-button rounded-l-full px-4 md:px-6 py-2 md:py-4 text-white inline-block transition-transform ${
+                isClicked ? "translate-y-[-3px]" : "translate-y-[-6px]"
+              }`}
+            >
+              {t("signIn")}
+            </Link>
           </div>
           <span className="w-px h-10 bg-white" />
           <div className="rounded-r-full bg-[#3f188c]">
-            <Button
+            {/* <Button
               href="https://lever-ed.framer.website/main"
               onClick={handleClick1}
               className={`bg-button rounded-r-full px-4 md:px-6 py-2 md:py-4 text-white ${
@@ -121,7 +132,18 @@ export const Header = () => {
               } transition-transform`}
             >
               {t("signUp")}
-            </Button>
+            </Button> */}
+            <Link
+              href="https://lever-ed.framer.website/main"
+              onClick={() => {
+                handleClick1();
+              }}
+              className={`bg-button rounded-r-full px-4 md:px-6 py-2 md:py-4 text-white inline-block transition-transform ${
+                isClickeds ? "translate-y-[-3px]" : "translate-y-[-6px]"
+              }`}
+            >
+              {t("signUp")}
+            </Link>
           </div>
         </div>
       </div>
