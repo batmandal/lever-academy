@@ -1,6 +1,7 @@
 import { FrequentlyQuestions } from "@/data";
 import { KeyboardArrowDownOutlined } from "@mui/icons-material";
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 type FrequentlyQuestionPartType = {
   questionNo: string;
@@ -25,7 +26,6 @@ export const FrequentlyQuestionPart = (props: FrequentlyQuestionPartType) => {
     }
   };
 
-
   const frequentlyQuestions = FrequentlyQuestions();
 
   const answer = frequentlyQuestions.find(
@@ -39,7 +39,7 @@ export const FrequentlyQuestionPart = (props: FrequentlyQuestionPartType) => {
           <span>{questionNo}</span>
           <p>{question}</p>
         </div>
-        <span
+        <div
           onClick={handleClick}
           className="w-8 h-8 md:w-10 md:h-10 cursor-pointer rounded-full border bg-[#bcbcbc] border-textsecondary mt-4 md:mt-0"
         >
@@ -48,15 +48,29 @@ export const FrequentlyQuestionPart = (props: FrequentlyQuestionPartType) => {
               isClicked ? "translate-y-[-3px]" : "translate-y-[-5px]"
             }`}
           >
-            <KeyboardArrowDownOutlined fontSize="medium" className="md:font-size-large" />
+            <KeyboardArrowDownOutlined
+              fontSize="medium"
+              className={`md:font-size-large transform transition-transform duration-300 ${
+                isActive ? "rotate-90" : "rotate-0"
+              }`}
+            />
           </span>
-        </span>
-      </div>
-      {isActive && (
-        <div className="pl-0 md:pl-10 text-textsecondary text-sm md:text-lg">
-          {answer || ""}
         </div>
-      )}
+      </div>
+
+      <AnimatePresence initial={false}>
+        {isActive && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.5 }}
+            className="overflow-hidden pl-0 md:mx-14 text-textsecondary text-sm md:text-lg"
+          >
+            <div className="py-2">{answer || ""}</div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
