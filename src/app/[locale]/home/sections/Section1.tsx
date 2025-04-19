@@ -45,7 +45,7 @@ export const Section1 = () => {
 
       <div className="animation my-8 sm:my-12">
         <Button
-          href="https://lever-ed.framer.website/main"
+          href="https://lever-ed.framer.website"
           label={t("mainButtontext")}
         />
       </div>

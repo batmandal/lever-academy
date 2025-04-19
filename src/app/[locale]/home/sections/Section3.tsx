@@ -14,7 +14,7 @@ export const Section3 = () => {
     >
       <div className="w-40 sm:w-48 lg:w-60 absolute right-4 top-4 sm:right-10 sm:top-10 lg:right-14 lg:top-14 z-10">
         <Button
-          href="https://lever-ed.framer.website/main"
+          href="https://lever-ed.framer.website"
           color={true}
           label={t("mainButtontext")}
         />

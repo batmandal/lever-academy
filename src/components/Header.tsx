@@ -111,7 +111,7 @@ export const Header = () => {
               {t("signIn")}
             </Button> */}
             <Link
-              href="https://lever-ed.framer.website/main"
+              href="https://lever-ed.framer.website"
               onClick={() => {
                 handleClick();
               }}
@@ -134,7 +134,7 @@ export const Header = () => {
               {t("signUp")}
             </Button> */}
             <Link
-              href="https://lever-ed.framer.website/main"
+              href="https://lever-ed.framer.website"
               onClick={() => {
                 handleClick1();
               }}

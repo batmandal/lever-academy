@@ -60,7 +60,7 @@ export const VisualDemoSection = () => {
               <div className="mt-4">
                 <Button
                   label={t("mainButtontext")}
-                  href="https://lever-ed.framer.website/main"
+                  href="https://lever-ed.framer.website"
                 />
               </div>
             </div>
@@ -92,7 +92,7 @@ export const VisualDemoSection = () => {
                   <Button
                     label={t("mainButtontext")}
                     href={
-                      "https://lever-ed.framer.website/main?fbclid=IwY2xjawIj8etleHRuA2FlbQIxMQABHchsgYhOJtvNfXHzUnPcd2w01ZDsAVguuoXzEHJmc6zQPMzmzjrohdqUNw_aem_e22uclMJLOj9FmA5P-Eh7Q"
+                      "https://lever-ed.framer.website"
                     }
                   />
                 </div>
